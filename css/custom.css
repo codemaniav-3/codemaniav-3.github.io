@@ -313,14 +313,14 @@ header, section {
   }
 
   #mainNav .navbar-toggler {
-    color: #F0B036;
+    color: #F9B303;
     border: 2px solid #ccc;
     border-radius: 30px;
   }
   
   #mainNav .navbar-toggler:hover, #mainNav .navbar-toggler:focus {
-    color: #F0B036;
-    border-color: #F0B036;
+    color: #F9B303;
+    border-color: #F9B303;
   }
 
   #mainNav .navbar-toggler:active {
@@ -464,7 +464,7 @@ p {
 
 
 .orange, .orange-hover {
-	color: #F0B036 !important;
+	color: #F9B303 !important;
 }
 
 .orange-hover:focus, .orange-hover:hover {
@@ -517,7 +517,7 @@ p {
 
 /* ---- Button css ---- */
 .btn-primary {
-  background-color: rgba(240, 176, 54);
+  background-color: rgba(249, 179, 3);
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   border-radius: 30px;
@@ -687,40 +687,41 @@ p {
 }
 
 #mainNav .nav-link:hover {
-    -webkit-text-fill-color: rgba(240, 176, 54) !important;
+    -webkit-text-fill-color: rgba(249, 179, 3) !important;
 }
 
 #mainNav .navbar-nav .nav-item:hover {
-    color: rgba(240, 176, 54) !important;
+    color: rgba(249, 179, 3) !important;
 }
 
 #mainNav.navbar-shrink .nav-link:hover {
-    color: rgba(240, 176, 54) !important;
+    color: rgba(249, 179, 3) !important;
 }
 
 
 /* Registration form style */
 #register-form {
   width:65%;
-  height: 1600px;
+  height: 1900px;
+
 }
 
 @media screen and (max-width: 480px) {
   #register-form {
     width:95%;
-    height: 1700px;
+    height: 1900px;
   }
 }
 @media screen and (max-width: 725px) and (min-width: 481px) {
   #register-form {
     width:90%;
-    height: 1700px;
+    height: 1900px;
   }
 }
     
 @media screen and (max-width: 800px) and (min-width: 726px) {
   #register-form {
     width:85%;
-    height: 1650px;
+    height: 1900px;
   }
 }
