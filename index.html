@@ -1,471 +1,250 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<meta charset="utf-8">
-	<meta name="viewport"
-		content="width=device-width, initial-scale=1, shrink-to-fit=no, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-	<meta name="title" content="CodeMania v3.0">
-	<meta name="description" content="CodeMania v3.0">
-	<meta name="author" content="CodeMania v3.0">
-	<meta name="keywords" content="CodeMania v3.0">
-	<title>C O D E M A N I A v3.0</title>
+        <!--=============== FAVICON ===============-->
+        <link rel="shortcut icon" href="assets/img/codegenix/logo1.png" type="image/x-icon">
 
-	<!-- Bootstrap core CSS -->
-	<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <!--=============== REMIX ICONS ===============-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+        
 
-	<!-- Custom fonts for this template -->
-	<link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
-	<link
-		href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
-		rel="stylesheet">
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="assets/css/styles.css">
 
-	<!-- Custom styles for this template -->
-	<link rel="stylesheet" type="text/css" href="timer.css">
-	<link href="css/grayscale.min.css" rel="stylesheet">
-	<link href="css/custom.css" rel="stylesheet">
-	<!-- Favicon for CreatED 2020 -->
-	<link rel="shortcut icon" type="image/x-icon" href="logo.png">
+        <title>CodeMania v3.0</title>
+    </head>
+    <body>
+        <!--==================== HEADER ====================-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav__logo">
+                    <img src="assets/img/CodeManiav3.0Logo.png" alt="Logo" class="nav-logo">
+                </a>
 
-	<!-- Custom style for Background -->
-	<link rel="stylesheet" href="/css/background.css">
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link active-link">Home</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#roadtocodem" class="nav__link">Register</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#codemania" class="nav__link">Rules</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#devstacks" class="nav__link">Workshops</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#about" class="nav__link">Team</a>
+                        </li>
+                    </ul>
 
-	<!-- Timeline --> 
-	<link rel="stylesheet" href="/css/timeline.css">
-	<link rel="stylesheet" type="text/css" href="css/util.css">
-	<link rel="stylesheet" type="text/css" href="css/main.css">
-	<link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
-	<style>
-		html{
-			scroll-behavior: smooth;
-		}
-		.prices-box{
-			box-shadow: 2px 2px 4px 0px #F9B303;
-			border-radius: 4px;
-		}
-		.fab{
-			font-size: 22px;
-		}
-		.fa-angle-double-down{
-			color: #ffa600;
-		}
-		body {
-			position: relative;
-		}
-		.green-color{
-			color: #1CB2A1;
-		}
-		@media (max-width: 991.98px) {
-			.masthead .container{
-				margin-top: 3rem;
-			}
-		}
-	</style>
-</head>
-<a id="mlh-trust-badge" style="display:block;max-width:100px;min-width:60px;position:fixed;right:50px;top:0;width:10%;z-index:10000" target="_blank"><img src="badge.png" alt="CodeGeniX 2.0 tyle="width:100%"></a>
-<body id="page-top">
-	<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-		<div id="navbar-container" class="container">
-			<div id="navbar-top-menu">
-				<div class="d-flex align-items-center justify-content-between">
-					<a class="navbar-brand js-scroll-trigger" href="./">
-						<div class="title-icon"></div>
-					</a>
-					<button class="navbar-toggler nexa" type="button" data-toggle="collapse"
-						data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
-						aria-label="Toggle navigation">
-						Menu
-						<i class="fas fa-bars"></i>
-					</button>
-				</div>
-			</div>
-			<div class="collapse navbar-collapse" id="navbarResponsive">
-				<ul id="navbar-buttons" class="navbar-nav ml-auto">
-					<li class="nav-item">
-						<a class="nav-link js-scroll-trigger nexa" href="./">Home</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link js-scroll-trigger nexa" href="register">Register</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link js-scroll-trigger nexa" href="rules">Rules</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link js-scroll-trigger nexa" href="workshops">Workshops</a>
-					</li>
-					<li class="nav-item" id="team">
-						<a class="nav-link js-scroll-trigger nexa" href="teams">Team</a>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</nav>
+                    <div class="nav__close" id="nav-close">
+                        <i class="ri-close-line"></i>
+                    </div>
+                </div>
 
-	<!-- <div id="particles-js"></div> -->
+                <div class="nav__btns">
+                    <!-- Theme change button -->
+                    <i class="ri-moon-line change-theme" id="theme-button"></i>
 
-	<div class="masthead">
-		<div class="container d-flex h-100 align-items-center">
-			<div class="mx-auto text-center no-select">
-				<h1 class="mx-auto my-0 title-text">CodeMania v3.0</h1>
-				<br><br>
-				
-				<h2 class="orange mx-auto mt-2 mb-1 sub-heading" style="width: 100%;">12<sup>th</sup>
-					June 2021</h2>
-				<h2 class="white mx-auto mt-2 mb-3 sub-heading" style="width: 100%;">Organized by IEEE Computer Society Student
-					Branch Chapter of Sri Lanka Technological Campus</h2>
-					<div id="button-box">
-						<a target="_blank"
-							href="https://codemaniav2.github.io/rules.html"
-							class="btn btn-primary js-scroll-trigger" style="z-index: 1; position: relative;">Rules</a>
-					</div>
-					
-				<div id="button-box" class="mt-2">
-					<a target="_blank"
-						href="https://www.hackerrank.com/codemania-v2"
-						class="btn btn-primary js-scroll-trigger"
-						style="z-index: 1; position: relative;">Enter the Challenge Now</a>
-				</div>
-				<div class="scroll-ho text-light text-center mt-5">
-					<a href="#cashPrices">
-						<h4>Scroll Down</h4>
-						<i class="fa fa-angle-double-down bx-fade-down h1" aria-hidden="true"></i>
-				  </a>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="display" style="background: #1d1c29;">
-		<div class="size1 overlay1">
-			<div class="size1 flex-col-c-m p-l-15 p-r-15 p-t-50 p-b-50">
-				<div class="flex-w flex-c-m cd100 p-b-33">
-					<h2 class="orange mx-auto mt-2 mb-3 sub-heading" style="width: 100%;">Remaining Time for the competition</h2>
-					<div class="flex-col-c-m size2 bor1 m-l-15 m-r-15 m-b-20">
-						<span class="l2-txt1 p-b-9" id="days"></span>
-						<span class="s2-txt1">Days</span>
-					</div>
-	
-					<div class="flex-col-c-m size2 bor1 m-l-15 m-r-15 m-b-20">
-						<span class="l2-txt1 p-b-9" id="hours"></span>
-						<span class="s2-txt1">Hours</span>
-					</div>
-	
-					<div class="flex-col-c-m size2 bor1 m-l-15 m-r-15 m-b-20">
-						<span class="l2-txt1 p-b-9" id="minutes"></span>
-						<span class="s2-txt1">Minutes</span>
-					</div>
-	
-					<div class="flex-col-c-m size2 bor1 m-l-15 m-r-15 m-b-20">
-						<span class="l2-txt1 p-b-9" id="seconds"></span>
-						<span class="s2-txt1" id="cashPrices">Seconds</span>
-					</div>
-				</div>
-			</div>
-		</div>		
-	</div>
-	<!-- <div class="container" >
-		<div class="row justify-content-around text-light prices">
-			<div class="col-md-8 col-12 mx-1 mt-3 p-0 text-center prices-box">
-				<img src="img/1st-place.jpeg" class="img-fluid">
-			</div>
-			<div class="col-md-5 col-12 mx-1 mt-3 p-0 text-center prices-box">
-				<img src="img/2nd-place.jpeg" class="img-fluid">
-			</div>
-			<div class="col-md-5 col-12 mx-1 mt-3 p-0 text-center prices-box">
-				<img src="img/3rd-place.jpeg" class="img-fluid">
-			</div>
-		</div>
-		<div class="row justify-content-center text-light prices">
-			<div class="col-md-6 my-4 p-3 col-12 text-center prices-box">
-				<h4>Top 10 Teams</h4>
-				<h3>CodeMania v3.0 Official T-shirts & Gift packs</h3>
-			</div>
-		</div>
-		<div class="row justify-content-center text-light gift-shirt my-3">
-			<div class="col-md-8 col-12 mx-1 text-center">
-				<img src="img/CodeMania T-Shirt Final-01.png" class="img-fluid">
-				<h3 class="orange sub-heading">Free for top 10 teams</h3>
-				<h4><span class="green-color">Compete, code and & win</span> to be eligible for unique T-shirts of Limited Edition.</h4>
-			</div>
-		</div>
-	</div>	 -->
-	<!-- Schedule-Timeline -->
-	<section class="timeline">
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class="ri-menu-line"></i>
+                    </div>
+                </div>
+            </nav>
+        </header>
 
-		<h1>Program Schedule</h1>
+        <main class="main">
+            <!--==================== HOME ====================-->
+            <section class="home-page" id="home">
+            <video src="assets/img/bg.mp4" autoplay muted loop plays-inline class="bg-video" style="filter: brightness(1.4) contrast(1.22) saturate(1.72) hue-rotate(100.8deg);"></video>
 
-		<ul>
-			<li>
-				<div class="content">
-					<h2>
-						<time>28th May</time>
-					</h2>
-					<p>Registration Open</p>
-				</div>
-			</li>
-			<li>
-				<div class="content">
-					<h2>
-						<time>9th June</time>
-					</h2>
-					<p>Registration Close</p>
-				</div>
-			</li>
-			<li>
-				<div class="content">
-					<h2>
-						<time>12th June</time>
-					</h2>
-					<p>Event Day</p>
+            <div class="home__container">
+                <div class="home-left">
+                    <img src="assets/img/CodeManiav3.0Logo.png" alt="" class="home__img_left">
+                    <h2 class="h2col-home">12<sup>th</sup> October 2022</h2>
+                    <h2 class="h2weight">Organized by IEEE Computer Society Student Branch Chapter of Sri Lanka Technological Campus</h2>
+                    <br><h2 class="h2col-home">Remaining Time for the competition</h2>
+                    <h2 class="countdown"></h2>
+                    <a href="register.html" class="code-btn button--link button--flex" style="margin-top:10px">
+                        Register Now <i class="ri-arrow-right-up-line button__icon"></i>
+                    </a>                    
+                </div>
+                <div class="home-right">
+                    <img src="assets/img/codegenix/bassa2.png" alt="" class="home__img_bassa">
+                </div>
+                
+            </div>
+            </section>
+            <!--==================== STEPS ====================-->
+            <section class="steps section container">
+                <div class="steps__bg">
+                    <h3>The IEEE Computer Society Student Branch Chapter of SLTC proudly presents “The Month of CodeGeniX 2021" as the second initiative for the year 2021. The Month of CodeGeniX is a series of continuous programs and is the first of its kind in the history of Sri Lanka Technological Campus.</h3>
+                </div>
+            </section>
 
-				</div>
-			</li>
-			<li>
-				<div class="content">
-					<h2>
-						<time>5.00 p.m</time>
-					</h2>
-					<p>Month of CodeGeniX Closing Ceremony</p>
-				</div>
-			</li>
-			<li>
-				<div class="content">
-					<h2>
-						<time>6.00 p.m</time>
-					</h2>
-					<p>CodeMania v3.0</p>
-				</div>
-			</li>
-			<li>
-				<div class="content">
-					<h2>
-						<time>9.00pm-9.30pm</time>
-					</h2>
-					<p>Break</p>
-				</div>
-			</li>
-			<li>
-				<div class="content">
-					<h2>
-						<time>12.00am</time>
-					</h2>
-					<p>End of the Codemania</p>
-				</div>
-			</li>
-		</ul>
-	</section>
-		</div>
+            <section class="steps section container">
+                <div class="steps__bg">
+						<table class="info-table">
+							<tr>
+								<th>
+									<b>Who is it for:</b>
+								</th>
+								<td>
+									Undergraduates from all the universities in Sri Lanka & school students
+								</td>
+							</tr>
+							<tr>
+								<th>
+									<b>When is it:</b>
+								</th>
+								<td>
+									15th May to 12th June
+								</td>
+							</tr>
+							<tr>
+								<th>
+									<b>Where will it take place:</b>
+								</th>
+								<td>
+									Zoom platform & Facebook Live
+								</td>
+							</tr>
+							<tr>
+								<th>
+									<b>I haven't any experience:</b>
 
-	<div class="sponsor-img-container mx-auto" style="max-width: 50%;">
-		<img class="img-fluid top-borders" src="./img/ieeecsw.png" /></a>
-	</div>
-	<script src="timer.js"></script>
+								</th>
+								<td>
+									These workshops are useful for not only individuals who have the knowledge of Computing and IT but also individuals who are stepping towards the field of IT and who are interested in learning the field of IT.
+								</td>
+							</tr>
+							<tr>
+								<th>
+									<b>Will we win anything:</b>
+								</th>
+								<td>
+									You will be awarded with a valuable certification.
+								</td>
+							</tr>
+						</table>	
+                </div>
+            </section>
+            <!--==================== ROAD TO CODEMANIA ====================-->
+            <section class="about section container" id="roadtocodem">
+                <div class="about__container about-reverse">
+                    <div class="about__data">
+                        <h2 class="section__title about__title">
+                            Road to Codemania '22
+                        </h2>
+                        <h3>2022 October 2, 06:00 pm onwards</h3>
+                        <p class="about__description">
+                        A Virtual 4 day webinar series to extend the knowledge of Data structures and algorithms.<br>
+                        Extremely free of charge!<br>
+                        Happening on the 2<sup>nd</sup>, 4<sup>th</sup>, 6<sup>th</sup> & 8<sup>th</sup> October 2022 via Zoom platform.
+                        <br>
+                        Sessions will be conducted bilingually<br>
+                        (සිං/ENG)
+                        <br>
+                        Don't let this chance slip away!
+                        </p>
+                        <a href="roadtocodemania.html" class="code-btn button--link button--flex">
+                            Register Now <i class="ri-arrow-right-up-line button__icon"></i>
+                        </a>
+                    </div>
+                    <div style="display: flex; align-items:center; justify-content: center;"><img src="assets/img/codegenix/roadtocode.jpeg" alt="" class="about__img"></div>
+                </div>
+            </section>
 
-	<section class="text-center">
+            <!--==================== CODEMANIA ====================-->            
+            <section class="about section container" id="codemania">
+                <div class="about__container grid">
+                    <div style="display: flex; align-items:center; justify-content: center;"><img src="assets/img/codegenix/bassa2.png" alt="" class="about__img"></div>
+                
+                    <div class="about__data">
+                        <h2 class="section__title about__title">
+                            CodeMania V3.0
+                        </h2>
+                        <h3>2022 October 2 6pm onwards</h3>
+                        <p class="about__description">
+                            Online Hackathon<br>This provides an online programming competition which gives the opportunity for coding to a given task by the competitors and only SLTC undergraduates can take part in this online programming competition.
+                        </p>
+                        <a href="#" class="code-btn button--link button--flex">
+                            Register Now <i class="ri-arrow-right-up-line button__icon"></i>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <!--==================== DEVOTS ====================-->
+             <section class="about section container" id="devstacks">
+                <div class="about__container about-reverse">
+                    <div class="about__data">
+                        <h2 class="section__title about__title">
+                            CodeMania V3.0
+                        </h2>
+                        <h3>2021 June 12 6pm onwards</h3>
+                        <p class="about__description">
+                            Online Hackathon<br>This provides an online programming competition which gives the opportunity for coding to a given task by the competitors and only SLTC undergraduates can take part in this online programming competition.
+                        </p>
+                        <a href="#" class="code-btn button--link button--flex">
+                            Register Now <i class="ri-arrow-right-up-line button__icon"></i>
+                        </a>
+                    </div>
+                    <div style="display: flex; align-items:center; justify-content: center;"><img src="assets/img/codegenix/bassa.jpg" alt="" class="about__img"></div>
+                </div>
+            </section>
+            <!-- About CS -->
+            <section class="about-cs section" id="about">
+                
+                <div class="container" style="text-align: center;"><h1>About</h1><br><p class="black bold">CodeMania v3.0 is an 6-hours long algorithmic coding competition. It will be the final project of the Month of CodeGeniX project series organized by the IEEE Computer Society Student Branch Chapter of Sri Lanka Technological Campus. Competitors of CodeMania v3.0 are required to solve problem sets utilizing their problem-solving and risk-taking abilities. The competition is planned to be held online via the HackerRank platform and will be based on the Python programming language. CodeMania v3.0 is open only for undergraduates of the Sri Lanka Technological Campus (SLTC).<br><br>CodeMania v3.0 is guided by an advisory panel headed by Dr Dhammika Elkaduwa as the chief advisor. The panel of judges of CodeMania v3.0 will be led by Mr. Suren Sritharan.This is planned to be held on 12 th June, 6 pm onwards via Hacker Rank Platform for SLTC undergraduates.<br><br><br><br>Copyright © CodeGeniX'22 by IEEE Computer Society Student Branch Chapter of SLTC<br><br></p>
+                </div>
+            </section>
+            <section class="cs" style="background-color: #ccb;">
+                <div class="container"><img src="assets/img/IEEE_CS_of_SLTC_LOGO-01.png" alt=""></div>
+                
+            </section>
+        </main>
 
-		<section>
+        <!--==================== FOOTER ====================-->
+        <footer class="footer">
+            <img src="assets/img/codegenix/logo-bar.png" alt="" style="margin-top: -20px;">
+            <!-- <div class="footer__container">
+                <div class="foot-div"><a href="#"><img src="assets/img/codegenix/logo.png" alt=""></a></div>
+                <div class="foot-div"><a href="#"><img src="assets/img/IEEE_CS_of_SLTC_LOGO-01.png" alt=""></a></div>
+                <div class="foot-div"><a href="#"><img src="assets/img/IEEE_LOGO.png" alt=""></a></div>
+                <div class="foot-div"><a href="#"><img src="assets/img/SLTC-LOGO_2022.png" alt=""></a></div>
+            </div> -->
+                <div class="footer__social">
+                    <a href="https://www.facebook.com/" class="footer__social-link">
+                        <i class="ri-facebook-fill"></i>
+                    </a>
+                    <a href="https://www.instagram.com/" class="footer__social-link">
+                        <i class="ri-instagram-line"></i>
+                    </a>
+                    <a href="https://twitter.com/" class="footer__social-link">
+                        <i class="ri-twitter-fill"></i>
+                    </a>
+                    <a href="https://youtube.com/" class="footer__social-link">
+                        <i class="ri-youtube-fill"></i>
+                    </a>
+                </div>
+            <p class="footer__copy">&#169; CodeGeniX'22 by IEEE Computer Society Student Branch Chapter of SLTC<br>Designed & developed by <a href="https://www.linkedin.com/in/sahankaushalya/" style="color: aliceblue;">Sahan Kaushalya</a></p>
+        </footer>
+        
+        <!--=============== SCROLL UP ===============-->
+        <a href="#" class="scrollup" id="scroll-up"> 
+            <i class="ri-arrow-up-fill scrollup__icon"></i>
+        </a>
 
-			<h1 class="sub-heading diagonal-text orange sub-heading-title">About</h1>
-
-		</section>
-
-		<section class="diagonal-section white-bg">
-
-			<div class="mx-auto diagonal-section-content">
-				<div class="container nexa">
-					<p class="black bold">CodeMania v3.0 is an 6-hours long algorithmic coding competition. It will be the final project
-						of the Month
-						of CodeGeniX project series organized by the IEEE Computer Society Student Branch Chapter of Sri Lanka
-						Technological Campus. Competitors of CodeMania v3.0 are required to solve problem sets utilizing their
-						problem-solving and risk-taking abilities. The competition is planned to be held online via the HackerRank
-						platform and will be based on the Python programming language. CodeMania v3.0 is open only for
-						undergraduates of the Sri Lanka Technological Campus (SLTC).
-						
-						</br></br>
-						CodeMania v3.0 is guided by an advisory panel headed by Dr Dhammika Elkaduwa as the chief advisor.
-						The panel of judges of CodeMania v3.0 will be led by Mr. Suren Sritharan.This is planned to be held on 12 th
-						June, 6 pm onwards via Hacker Rank Platform for SLTC undergraduates.
-						<br><br>
-						</br></br>
-						Copyright &copy; CodeGeniX'22 by IEEE Computer Society Student Branch Chapter of SLTC
-						<br><br>
-						
-					</p>
-				</div>
-			</div>
-
-		</section>
-	<!--<div class="area" >
-				<ul class="circles">
-						<li></li>
-						<li></li>
-						<li></li>
-						<li></li>
-						<li></li>
-						<li></li>
-						<li></li>
-						<li></li>
-						<li></li>
-				</ul>
-		</div >
-
-			<section>
-				<h1 class="sub-heading diagonal-text orange sub-heading-title" style="padding-bottom: 100px; padding-top: 100px; margin-bottom: 0;">Schedule</h1>
-			</section>
-			<section class="diagonal-section white-bg">
-					<div class="mx-auto diagonal-section-content">
-						<div class="schedule">
-							<div id="schedSat">
-								<h3 style="font-weight: bold;">Saturday 12th</h3>
-								<br>
-								<table class="table table-hover" id="saturdayContainer">
-	
-								</table>
-							</div>
-							<div id="schedSun">
-								<h3 style="font-weight: bold;">Sunday 13th</h3>
-								<br>
-								<table class="table table-hover" id="sundayContainer">
-									
-								</table>
-	
-							</div>
-						</div>
-						<br>
-						<p style="font-weight: bold;">Stay tuned!</p>
-					</div>
-			</section>
-			
-			<section class="diagonal-section vertical-padding" style="opacity: 0.95!important;">
-			
-				<div class="image-showcase">
-					<div class="mx-auto diagonal-section-content">
-						<div class="container">
-							<div class="row">
-								<div class="col-xl-6">
-									<div class="img-box zoom first-image">
-										<div class="workshop-item-image">
-											<img class="img-fluid top-borders" src="img/2018_picture_1.JPG" alt="">
-										</div>
-										<div class="workshop-item-textbox bottom-borders nexa" style="background: white!important">
-											<h6 style="font-weight: bold; margin: 0.5em">Check out the <span style="color: #64a19d"><a href="https://created-april-2018.devpost.com/">projects</a></span> from our 2018 hackathon's participants</h6>
-										</div>
-									</div>
-								</div>
-								<div class="col-xl-6">
-									<div class="img-box zoom">
-										<div class="workshop-item-image">
-											<img class="img-fluid top-borders" src="img/2018_picture_2.JPG" alt="">
-										</div>
-										<div class="workshop-item-textbox bottom-borders nexa" style="background: white!important">
-											<h6 style="font-weight: bold; margin: 0.5em"><span class="orange">Mentors</span> helping participants at CreatED Hack 2018</h6>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				
-			</section>
-			
-			<section class="diagonal-section white-bg">
-			
-				<div class="mx-auto diagonal-section-content">
-					<div class="container nexa">
-						<p class="black bold">Applications are now open. Click on "apply" at the top. Also make sure to check out our <a href="https://createdhack.com/sponsors.html">sponsors</a> who are making this event possible! They're all hiring and it's a perfect time to look for an internship. Have a question? We have an <a href="https://createdhack.com/faqs.html">FAQ!</a></p>
-					</div>
-				</div>
-				
-			</section>
-			
-			<section class="diagonal-section black-bg" style="height: 4em; opacity: 1;"></section>
-		-->
-			<section class="footer-section black-bg">
-
-
-			
-				<div style="padding-top: 4em;">
-					<div class="small text-center white">
-				<div style="padding-top: 0">
-					<div class="text-center white">
-						<div class="social d-flex justify-content-center"></div>
-						<a href="https://lnkd.in/gpeu2Xe" target="_blank" class="mx-2 orange-hover">
-						  <i class="fab fa-facebook-f"></i>
-						</a>
-						<a href="https://www.youtube.com/channel/UCrsJlEY4bydXLVdNn7SV4EA" target="_blank" class="mx-2 orange-hover">
-						  <i class="fab fa-youtube"></i>
-						</a>
-						<a href="www.twitter.com/sltcieeecs" target="_blank" class="mx-2 orange-hover">
-						  <i class="fab fa-twitter"></i>
-						</a>
-						<a href="https://lnkd.in/gAgQFAv" target="_blank" class="mx-2 orange-hover">
-							<i class="fab fa-linkedin"></i>
-						</a>
-						<a href="https://lnkd.in/gaYqJ4A" target="_blank" class="mx-2 orange-hover">
-							<i class="fab fa-instagram"></i>
-						</a>
-						
-					</div>
-					
-				</div>
-				
-			</section>
-			
-		</section>
-		
-		<!-- Bootstrap core JavaScript -->
-		<script src="vendor/jquery/jquery.min.js"></script>
-		<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-		<!-- Plugin JavaScript -->
-		<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-		<!-- Custom scripts for this template -->
-		<script src="js/grayscale.js"></script>
-
-		<!-- Custom javascript -->
-		<script src="js/custom.js"></script>
-		<script>
-			// Set the date we're counting down to
-			var countDownDate = new Date("Oct 2, 2022 18:00:00").getTime();
-			
-			// Update the count down every 1 second
-			var x = setInterval(function() {
-			
-			  // Get today's date and time
-			  var now = new Date().getTime();
-				
-			  // Find the distance between now and the count down date
-			  var distance = countDownDate - now;
-				
-			  // Time calculations for days, hours, minutes and seconds
-			  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-			  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-			  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-			  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-				
-			  // Output the result in an element with id="demo"
-			  document.getElementById("days").innerHTML = days;
-			  document.getElementById("hours").innerHTML = hours;
-			  document.getElementById("minutes").innerHTML = minutes;
-			  document.getElementById("seconds").innerHTML = seconds;
-				
-			  // If the count down is over, write some text 
-			  if (distance < 0) {
-				clearInterval(x);
-				document.getElementById("days").innerHTML = "00";
-			  document.getElementById("hours").innerHTML = "00";
-			  document.getElementById("minutes").innerHTML = "00";
-			  document.getElementById("seconds").innerHTML = "00";
-			  }
-			}, 1000);
-		</script>
-
-		<!-- Particle library
-		<script src="particles/particles.js"></script>
-		<script src="particles/app.js"></script> -->
-
-</body>
-
+        <!--=============== SCROLL REVEAL ===============-->
+        <script src="assets/js/scrollreveal.min.js"></script>
+        
+        <!--=============== MAIN JS ===============-->
+        <script src="assets/js/main.js"></script>
+    </body>
 </html>
