@@ -239,11 +239,11 @@ img{
   cursor: pointer;
 }
 @media screen and (max-width: 400px){
-  .timeline__bg h1{
+  .timeline__bg h1, .about-h1{
     font-size: 1.8rem !important;
   } }
   @media screen and (max-width: 600px){
-    .timeline__bg h1{
+    .timeline__bg h1, .about-h1{
       text-align: center ;
     } 
     .steps__bg h2, .about-cs div p{
@@ -527,7 +527,8 @@ img{
   border-radius: 1rem;
 }
 
-.timeline__bg h1{
+.timeline__bg h1, .about-h1{
+  width: 100% !important;
   color:var(--first-color);
   font-size: 2rem;
   border-bottom: 1px solid var(--first-color);
@@ -1490,7 +1491,7 @@ img{
  
 }
 .contact-card{
-  background-color: #fff1;
+  background-color: #fff2;
   width:30%;
   min-width: 300px;
   padding: 1rem;
