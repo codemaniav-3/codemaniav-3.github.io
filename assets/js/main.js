@@ -144,7 +144,8 @@ sr.reveal(`.steps__card, .product__card, .questions__group, .footer`,{interval: 
 
 // Timer
 // Setup End Date for Countdown (getTime == Time in Milleseconds)
-let launchDate = new Date("Oct 20, 2022 18:00:00").getTime();
+let launchDate = new Date("Oct 09, 2022 23:59:59").getTime();
+// let RegClose = new Date("Oct 09, 2022 23:59:59").getTime();
 
 // Setup Timer to tick every 1 second
 let timer = setInterval(tick, 1000);
@@ -154,6 +155,7 @@ function tick () {
   let now = new Date().getTime();
   // Get the difference in time to get time left until reaches 0
   let t = launchDate - now;
+//   let t2 = RegClose - now;
 
   // Check if time is above 0
   if (t > 0) {
@@ -179,6 +181,31 @@ function tick () {
     let time = `${days} : ${hours} : ${mins} : ${secs}`;
 
     // Set time on document
-    document.querySelector('.countdown').innerText = time;
+    document.querySelector('.countdown2').innerText = time;
   }
+//   if (t2 > 0) {
+//     // Setup Days, hours, seconds and minutes
+//     // Algorithm to calculate days...
+//     let days2 = Math.floor(t2 / (1000 * 60 * 60 * 24));
+//     // prefix any number below 10 with a "0" E.g. 1 = 01
+//     if (days2 < 10) { days2 = "0" + days2; }
+    
+//     // Algorithm to calculate hours
+//     let hours2 = Math.floor((t2 % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+//     if (hours2 < 10) { hours2 = "0" + hours2; }
+
+//     // Algorithm to calculate minutes
+//     let mins2 = Math.floor((t2 % (1000 * 60 * 60)) / (1000 * 60));
+//     if (mins2 < 10) { mins2 = "0" + mins2; }
+
+//     // Algorithm to calc seconds
+//     let secs2 = Math.floor((t2 % (1000 * 60)) / 1000);
+//     if (secs2 < 10) { secs2 = "0" + secs2; }
+
+//     // Create Time String
+//     let time2 = `${days2} : ${hours2} : ${mins2} : ${secs2}`;
+
+//     // Set time on document
+//     document.querySelector('.countdown2').innerText = time2;
+//   }
 }

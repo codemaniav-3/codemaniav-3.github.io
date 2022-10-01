@@ -271,7 +271,7 @@ img{
     transition: .3s;
     z-index: var(--z-fixed);
   }
-  .countdown {
+  .countdown, .countdown2 {
     font-size: 2.5rem !important;
   }
   .code-btn{
@@ -500,6 +500,7 @@ img{
 .timeline__bg{
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-direction: column;
   background-color: hsl(45, 8%, 20%);
   padding: 3rem 2rem 2rem;
@@ -510,6 +511,10 @@ img{
   color:var(--first-color);
   font-size: 2rem;
   border-bottom: 1px solid var(--first-color);
+}
+.event-bg{
+  max-width: 100%;
+  width: 100%;
 }
 .event-day{
   border-top: 5px solid var(--first-color);
@@ -596,7 +601,7 @@ img{
   margin-top: 2rem;
   padding: 20px;
   max-width: 100%;
-  width: 30%;
+  width: 23%;
   background-color: #fff1;
   display: flex;
   flex-direction: column;
@@ -1421,10 +1426,17 @@ img{
   justify-content: center;
 }
 
+.countdown2 {
+  font-family: "digital-7";
+  font-size: 3rem;
+  font-weight: 400;
+  color: red;
+}
 .countdown {
   font-family: "digital-7";
   font-size: 3rem;
-  color: red;
+  font-weight: 400;
+  color: #0f0;
 }
 @keyframes FadeInUp {
 	0% {
@@ -1436,4 +1448,66 @@ img{
 		transform:translateY(0px);
 		opacity:1;
 	}
+}
+
+
+
+/* ========CONTACT========== */
+.contact-cont{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5rem;
+}
+.contact-card{
+  background-color: #fff1;
+  width: 30%;
+  padding: 1rem;
+  border-radius: 10px;
+  
+
+}
+.contact-up{
+  width:100%;
+  display: flex;
+}
+
+.contact-up img{
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+}
+.contact-up div {
+  padding-left: 10px;
+}
+.contact-up div p {
+  font-size: 0.8rem;
+}
+.contact-up div h2 {
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+.contact-down a{
+  font-size: 2.5rem;
+}
+.contact-down{
+  display:flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-top: 10px;
+}
+
+
+/* =======Intro Viseo======== */
+.intro{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.intro-video{
+  width: 100vw;
+  object-fit: cover;
 }
