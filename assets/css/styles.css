@@ -255,6 +255,9 @@ img{
   .prizes-cont{
     width: 90% !important;
   }
+  .prizes-card{
+    justify-content: center !important;
+  }
   .nav__menu{
     position: fixed;
     background-color: var(--container-color);
@@ -590,6 +593,7 @@ img{
 }
 /* ===========================Prizes======================== */
 .prizes-cont{
+  margin-top: 2rem;
   padding: 20px;
   max-width: 100%;
   width: 30%;
@@ -599,9 +603,13 @@ img{
   align-items: center;
   justify-content: space-between;
   border-radius: 40% 40% 10% 10%;
+  transition: all ease-in-out 0.5s;
+}
+.prizes-cont:hover{
+  transform: scale(1.1);
+  transition: all ease-in-out 0.5s;
 }
 .prizes-card{
-  margin-top: 1rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
