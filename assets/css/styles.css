@@ -261,10 +261,12 @@ img{
   }
   .contact h1{
     width: 100%;
+    min-width: 150px !important;
     max-width: 400px;
   }
   .contact-cont{
     width: 100%;
+    min-width: 150px !important;
     max-width: 400px;
     flex-direction: column;
   }
