@@ -252,6 +252,26 @@ img{
      
   }
 @media screen and (max-width: 767px){
+  .contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 1rem !important;
+  }
+  .contact h1{
+    width: 100%;
+    max-width: 400px;
+  }
+  .contact-cont{
+    width: 100%;
+    max-width: 400px;
+    flex-direction: column;
+  }
+  .contact-card{
+    width:100% !important;
+    max-width: 400px;
+  }
   .prizes-cont{
     width: 90% !important;
   }
@@ -1453,19 +1473,31 @@ img{
 
 
 /* ========CONTACT========== */
+.contact{
+  padding: 0 10rem;
+}
+.contact h1{
+  color: var(--first-color);
+  font-size: 2rem;
+  margin: 2rem 0;
+  border-bottom: 1px solid var(--first-color);
+}
 .contact-cont{
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: space-around;
   align-items: center;
-  margin-bottom: 5rem;
+ 
 }
 .contact-card{
   background-color: #fff1;
-  width: 30%;
+  width:30%;
+  min-width: 300px;
   padding: 1rem;
   border-radius: 10px;
-  
-
+  margin-bottom: 2rem; 
+  margin-left: 2px;
+  margin-right: 2px;
 }
 .contact-up{
   width:100%;
@@ -1490,14 +1522,31 @@ img{
 .contact-down a{
   font-size: 2.5rem;
 }
+
+.contact-down a:hover{
+  transform: scale(1.1);
+  transition: all ease 0.3s;
+}
+.contact-down a{
+  font-size: 2.5rem;
+  transition: all ease 0.3s;
+
+}
 .contact-down{
   display:flex;
   align-items: center;
   justify-content: space-evenly;
   padding-top: 10px;
 }
-
-
+.call{
+  color: #3b5998;
+}
+.wa{
+  color:#25D366;
+}
+.email{
+  color:magenta;
+}
 /* =======Intro Viseo======== */
 .intro{
   margin: 0;
