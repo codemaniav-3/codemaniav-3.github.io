@@ -238,7 +238,19 @@ img{
   font-size: 1.25rem;
   cursor: pointer;
 }
-
+@media screen and (max-width: 400px){
+  .timeline__bg h1{
+    font-size: 1.8rem !important;
+  } }
+  @media screen and (max-width: 600px){
+    .timeline__bg h1{
+      text-align: center ;
+    } 
+    .steps__bg h2, .about-cs div p{
+      font-size: 1rem;
+    }
+     
+  }
 @media screen and (max-width: 767px){
   .nav__menu{
     position: fixed;
@@ -479,10 +491,60 @@ img{
 }
 
 /*=============== STEPS ===============*/
-.steps__bg{
+.timeline__bg{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   background-color: hsl(45, 8%, 20%);
   padding: 3rem 2rem 2rem;
   border-radius: 1rem;
+}
+
+.timeline__bg h1{
+  color:var(--first-color);
+  font-size: 2rem;
+  border-bottom: 1px solid var(--first-color);
+}
+.event-day{
+  border-top: 5px solid var(--first-color);
+  background-color: rgb(225, 255, 255, 0.1);
+  border-radius: 5px;
+  margin-top: 1rem;
+  padding: 1rem;
+  transition: all ease 0.3s;
+}
+.event-day:hover{
+  background-color: rgb(225, 255, 200, 0.2);
+  color: white;
+  transition: all ease 0.3s;
+  cursor: pointer;
+}
+.event-day:hover h2{
+  color: var(--first-color) !important;
+  transition: all ease 0.3s;
+}
+
+.steps__bg{
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: hsl(45, 8%, 20%);
+  padding: 3rem 2rem 2rem;
+  border-radius: 1rem;
+}
+.zindex2{
+  z-index: 2;
+}
+.step__img_bassa{
+  max-width: 80%;
+  min-width: 45%;
+  position:absolute;
+  z-index: 1;
+  opacity: 0.2;
+  
+
 }
 
 .steps__container{
