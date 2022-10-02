@@ -1689,3 +1689,16 @@ img{
   width: 100vw;
   object-fit: cover;
 }
+
+/* =========RULES======== */
+.rules {
+  padding: 5rem 0 1rem !important;
+}
+.rules-content {
+  width: 100%;
+  padding-top: .5rem;
+}
+.rules-content ul{
+  list-style: disc;
+  margin-left: 1.1rem;
+}
