@@ -1707,8 +1707,8 @@ img{
 .ful-scrn{
   position:fixed;
   z-index: 999;
-  bottom: 10px;
-  margin-left: 18px;
+  bottom: 2rem;
+  margin-left: 2rem;
   font-size: 2.2rem;
   transition: all ease 0.3s;
 
