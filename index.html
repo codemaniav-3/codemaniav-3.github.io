@@ -34,6 +34,9 @@
         <!--=============== CSS ===============-->
         <link rel="stylesheet" href="assets/css/styles.css">
 
+        <!-- Link Swiper's CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+
         <title>CodeMania v3.0</title>
     </head>
     <body>
@@ -289,8 +292,24 @@
                         <h1>Register Your Team</h1>
                         <div class="reg-content">
                             
-                            <div class="slide-container">
-                                <img src="assets/img/flyer/1.jpeg" alt="" class="slide-img">
+                            <div class="slide-container swiper mySwiper">
+                                
+                                <div class="swiper-wrapper">
+                                    <img src="assets/img/flyer/1.jpeg" alt="" class="slide-img swiper-slide">
+                                    <img src="assets/img/flyer/2.jpeg" alt="" class="slide-img swiper-slide">
+                                </div>
+                                <style>
+                                    
+                                    .swiper-pagination-bullet{
+                                        background: var(--first-color);
+                                        opacity: 0.5;
+                                    }
+                                    .swiper-pagination-bullet-active{
+                                        background: var(--first-color);
+                                        opacity: 1;
+                                    }
+                                </style>
+                                <div class="swiper-pagination"></div>
 
                             </div>
                                 <!-- <span class="t1">ARE YOU READY</span>
@@ -485,7 +504,30 @@
                 </div>
             <p class="footer__copy">&#169; CodeGeniX'22 by IEEE Computer Society Student Branch Chapter of SLTC<br>Designed & developed by <a href="https://www.linkedin.com/in/sahankaushalya/" style="color: aliceblue;">Sahan Kaushalya</a></p>
         </footer>
-        
+        <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+        <!-- Initialize Swiper -->
+        <script>
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 0,
+            centeredSlides: true,
+            loop: true,
+            loopFillGroupWithBlank: true,
+            autoplay: {
+            delay: 3500,
+            disableOnInteraction: false,
+            },
+            pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+            },
+            navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+            },
+        });
+        </script>
         <!--=============== SCROLL UP ===============-->
         <a href="#" class="scrollup" id="scroll-up"> 
             <i class="ri-arrow-up-fill scrollup__icon"></i>
