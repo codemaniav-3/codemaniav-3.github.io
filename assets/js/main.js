@@ -91,9 +91,9 @@ window.addEventListener('scroll', scrollActive)
 function scrollUp(){
     const scrollUp = document.getElementById('scroll-up');
     // When the scroll is higher than 400 viewport height, add the show-scroll class to the a tag with the scroll-top class
-    if(this.scrollY >= 400) scrollUp.classList.add('show-scroll'); else scrollUp.classList.remove('show-scroll')
+    if(this.scrollY >= 400) scrollUp.classList.add('show-scroll'); else scrollUp.classList.remove('show-scroll');
 }
-window.addEventListener('scroll', scrollUp)
+window.addEventListener('scroll', scrollUp);
 
 /*=============== DARK LIGHT THEME ===============*/ 
 const themeButton = document.getElementById('theme-button')
@@ -144,7 +144,7 @@ sr.reveal(`.steps__card, .product__card, .questions__group, .footer`,{interval: 
 
 // Timer
 // Setup End Date for Countdown (getTime == Time in Milleseconds)
-let launchDate = new Date("Oct 09, 2022 23:59:59").getTime();
+let launchDate = new Date("Oct 10, 2022 23:59:59").getTime();
 // let RegClose = new Date("Oct 09, 2022 23:59:59").getTime();
 
 // Setup Timer to tick every 1 second
@@ -182,7 +182,8 @@ function tick () {
 
     // Set time on document
     document.querySelector('.countdown2').innerText = time;
-  }
+  } 
+}
 //   if (t2 > 0) {
 //     // Setup Days, hours, seconds and minutes
 //     // Algorithm to calculate days...
@@ -208,7 +209,7 @@ function tick () {
 //     // Set time on document
 //     document.querySelector('.countdown2').innerText = time2;
 //   }
-}
+// }
 
 
 
