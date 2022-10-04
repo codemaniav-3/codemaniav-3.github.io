@@ -257,7 +257,7 @@ img{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 0 1rem !important;
+    padding: 5rem 1rem 0 1rem !important;
   }
   .contact h1{
     width: 100%;
@@ -1603,7 +1603,8 @@ img{
 
 /* ========CONTACT========== */
 .contact{
-  padding: 0 10rem;
+  padding: 5rem 10rem 0 10rem !important;
+
 }
 .contact h1{
   color: var(--first-color);
@@ -1695,6 +1696,7 @@ img{
   padding: 5rem 0 1rem !important;
 }
 .rules-content {
+  z-index: 10 !important;
   width: 100%;
   padding-top: .5rem;
 }
@@ -1722,4 +1724,125 @@ img{
 
 .active-fullscreen {
   color:var(--first-color);
+}
+
+
+/* ===============Register============= */
+.reg-content {
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #fff1;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.reg-caption{
+  width: 50%;
+  /* height: 100%; */
+  padding: 0 1rem;
+  margin: 0;
+}
+.reg-btn {
+  width: 80%;
+  border: 1px solid var(--first-color);
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  margin-bottom: 15px;
+  border-radius: 30px;
+  transition: all ease 0.3s;
+
+}
+.reg-btn:hover {
+  background-color: var(--first-color);
+  color: var(--first-color-dark);
+  transition: all ease 0.3s;
+
+}
+.reg-text span {
+  margin-bottom: 10px;
+}
+.reg-text{
+  height: 100%;
+  font-family: Consolas;
+  text-transform: capitalize;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+}
+.reg-text .t5, .reg-text .t7 {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 2rem;
+  color: white;
+}
+
+.reg-text .t6 {
+  font-family: 'Gemunu Libre', sans-serif;
+  font-size: 2.5rem;
+  color: yellow;
+  /* color: var(--first-color-dark); */
+  font-weight: 400;
+  text-shadow: 0 0 5px red, 0 0 10px rgba(255, 0, 0, 0.5), 0 0 20px rgba(255, 0, 0, 0.2);
+  /* text-shadow: -1px 0 red, 0 1px red, 1px 0 red, 0 -1px red; */
+
+  /* text-shadow: -1px 0 var(--first-color), 0 1px var(--first-color), 1px 0 var(--first-color), 0 -1px var(--first-color); */
+}
+/* .reg-text .t6 span{
+  color: yellow;
+} */
+
+.reg-text .t1 {
+  font-family: 'Gemunu Libre', sans-serif;
+  color:#fff;
+  font-size: 2rem;
+  font-weight: 400;
+}
+.reg-text .t2, .reg-text .t3, .reg-text .t4 {
+  font-family: 'Gemunu Libre', sans-serif;
+  color: var(--first-color);
+}
+
+
+
+/* --slider-- */
+.slide-container {
+  width: 50%;
+  /* min-width: 350px; */
+}
+.slide-img {
+  height: 100%;
+  width: 100%;
+}
+@media screen and (max-width:900px){
+  .reg-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 500px;
+  }
+  .slide-container {
+    width: 100%;
+    /* min-width: 350px; */
+  }
+  .reg-caption{
+    width: 100%;
+  }
+  .reg-text .t5, .reg-text .t7{
+    font-size: 1.5rem;
+  }
+.reg-text .t6 {
+  font-size: 1.7rem;
+}
+.reg-text span{
+  align-self: center;
+  text-align: center;
+}
+.reg-text .t1 {
+  font-size: 1.5rem;
+}
+
 }
