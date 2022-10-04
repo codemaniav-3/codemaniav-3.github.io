@@ -13,7 +13,10 @@
         <!-- ==============FONT AWESOME =============== -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         
-
+        <!-- ============= Google Fonts =============== -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fugaz+One&family=Gemunu+Libre&family=Montserrat&family=Righteous&display=swap" rel="stylesheet">
         <!--=============== CSS ===============-->
         <link rel="stylesheet" href="assets/css/styles.css">
 
@@ -33,17 +36,26 @@
                         <li class="nav__item">
                             <a href="#home" class="nav__link active-link">Home</a>
                         </li>
+                        <li class="nav__item" style="display: none;">
+                            <a href="#ieeecs" class="nav__link">IEEE CS</a>
+                        </li>
                         <li class="nav__item">
-                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSc-k5akDcoQ810yga1rGcvO5_vj4gVBR6GaEybV8OqfFBdiZQ/viewform?usp=sf_link" class="nav__link">Register</a>
+                            <a href="#timeline" class="nav__link">Timeline</a>
+                        </li>
+                        <li class="nav__item" style="display: none;">
+                            <a href="#prizes" class="nav__link">Prizes</a>
                         </li>
                         <li class="nav__item">
                             <a href="#rules" class="nav__link">Rules</a>
                         </li>
                         <li class="nav__item">
-                            <a href="#workshops" class="nav__link">Workshops</a>
+                            <a href="#register" class="nav__link">Register</a>
                         </li>
                         <li class="nav__item">
-                            <a href="#team" class="nav__link">Team</a>
+                            <a href="#about" class="nav__link">About</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#contact" class="nav__link">Contact</a>
                         </li>
                     </ul>
 
@@ -78,7 +90,7 @@
                     <h2 class="countdown2"></h2>
                     <!-- <br><h2 class="h2col-home">Remaining Time for the competition</h2> -->
                     <!-- <h2 class="countdown"></h2> -->
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSc-k5akDcoQ810yga1rGcvO5_vj4gVBR6GaEybV8OqfFBdiZQ/viewform?usp=sf_link" class="code-btn button--link button--flex" style="margin-top:20px">
+                    <a href="#register" class="code-btn button--link button--flex" style="margin-top:20px">
                         Register Now <i class="ri-arrow-right-up-line button__icon"></i>
                     </a>                    
                 </div>
@@ -89,7 +101,7 @@
             </div>
             </section>
             <!--==================== STEPS ====================-->
-            <section class="steps section container" id="codemania">
+            <section class="steps section container" id="ieeecs">
                 <div class="steps__bg">
                     <img src="assets/img/CodeManiav3.0Logo.png" alt="" class="step__img_left zindex2">
                     <h2 style="text-align: center; font-weight:400;" class="zindex2">The IEEE Computer Society Student Branch Chapter of SLTC introduced
@@ -145,7 +157,7 @@
 				</div>
             </section> -->
 
-            <section class="timeline section container">
+            <section class="timeline section container" id="timeline">
                 <div class="timeline__bg">
                     <h1 >Program Schedule</h1>
                     <div class="timeline-container">
@@ -178,7 +190,7 @@
             </section>
 
             <!-- Prizes -->
-            <section class="timeline section container">
+            <section class="timeline section container" id="prizes">
                 <div class="timeline__bg">
                     <h1 align="center">Prizes</h1>
                     <div class="prizes-card">
@@ -206,7 +218,7 @@
             <!-- ===================RULES AND REGULATIONS ================= -->
             <section class="rules section container" id="rules">
                 <div class="rules-bg timeline__bg">
-                    <div class="">
+                    <div style="z-index: 10;">
                         <h1>Rules and Regulations</h1>
                         <div class="rules-content">
                             <h2>Teaming</h2>
@@ -234,7 +246,7 @@
                                 <li>Only the SLTC undergraduates can participate to the competition.</li>
                                 <li>All the SLTC students from batch four to batch nine in school of engineering, school of computing & IT, school of technology are eligible to participate to the competition.</li>
                                 <li>After registration, competitors will receive instructions from coordinators and emails.</li>
-                                <li>Challenges will be set by a panel of judges and will be judged through the <a href="https://www.hackerrank.com" style="color: lightblue ;">hackerrank platform.</a></li>
+                                <li>Challenges will be set by a panel of judges and will be judged through the <a href="https://www.hackerrank.com" style="color: lightblue ; z-index: 10;">hackerrank platform.</a></li>
                                 <li>Challenges will be categorized as easy, intermediate and hard levels. Therefore, CodeMania v3.0 allows students of all experience levels to participate.</li>
                                 <li>Competitors can use any of the programming languages provided by the platform. For more information, refer to the website: Execution Environment and Samples – HackerRank Support Center</li>
                                 <li>Winners are determined strictly based on the scoring mechanism provided by the HackerRank platform. </li>
@@ -248,13 +260,64 @@
                         
                     </div>
                         <code style="color:#fff; margin-top:2.5rem; margin-bottom:10px;">Click to download</code>
-                        <a href="assets/Rules-and-Regulations.pdf" class="code-btn button--link button--flex" style="text-align: center;">
+                        <a href="assets/Rules-and-Regulations.pdf" class="code-btn button--link button--flex" style="text-align: center; z-index: 10;">
                             Rules & Regulations <i class="ri-arrow-right-up-line button__icon"></i>
                         </a>
-                    <img src="assets/img/codegenix/bassa2.png" alt="" class="step__img_bassa">
+                    <img src="assets/img/codegenix/bassa2.png" alt="" class="step__img_bassa" style="z-index: 1 !important;">
                 </div>
             </section>
 
+
+             <!-- ===================REGISTRATION ================= -->
+             <section class="register section container" id="register">
+                <div class="rules-bg timeline__bg">
+                    <div style="z-index: 10;">
+                        <h1>Register Your Team</h1>
+                        <div class="reg-content">
+                            
+                            <div class="slide-container">
+                                <img src="assets/img/flyer/1.jpeg" alt="" class="slide-img">
+
+                            </div>
+                                <!-- <span class="t1">ARE YOU READY</span>
+                                <span class="t2">TO LIVE IN THE HEAT OF AN INTENCE</span>
+                                <span class="t3">CODING BATTLE..??</span>
+                                <span class="t4">NOT JUST FOR EXPERTS</span>
+                                <span class="t5">THE ULTIMATE</span>
+                                <span class="t6">PROGRAMMING CHALLENGE</span>
+                                <span class="t7">CODE TILL THE END & SHARPEN YOUR KNOWLEDGE</span>
+                                 -->
+
+                            <div class="reg-caption">
+                                <h2 class="reg-text">
+                                    <span class="t1">Fight till the end of the coding battle to win amazing prizes.</span>
+                                    <span class="t2">Date: 20th of October</span>
+                                    <span class="t3">Time: 6.00 pm onwards</span>
+                                    <span class="t4">Venue: SLTC premises</span>
+                                    <span class="t5">Be part of the first ever physical programming competition!!</span>
+                                    <span class="t6">Exclusive for SLTCians</span>
+                                    <span class="t7">Register Now to save your place</span>
+                                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSc-k5akDcoQ810yga1rGcvO5_vj4gVBR6GaEybV8OqfFBdiZQ/viewform?usp=sf_link" class="reg-btn button--link button--flex">
+                                        Register Now <i class="ri-arrow-right-up-line button__icon"></i>
+                                    </a>
+                                </h2>
+                                
+                                
+                            </div>
+                            <!-- <div>
+                                <p>
+                                    THE GREATEST COMPETITION FOR CODING ENTHUSIASTS OF SLTC
+                                </p>
+                                <p>ONLY FOR SLTC UNDERGRADUATES</p>
+                            </div> -->
+                        </div>
+
+                                      
+                    </div>
+                        
+                    <!-- <img src="assets/img/codegenix/bassa2.png" alt="" class="step__img_bassa"> -->
+                </div>
+            </section>
             <!--==================== ROAD TO CODEMANIA ====================-->
             <!-- <section class="about section container" id="roadtocodem">
                 <div class="about__container about-reverse">
@@ -324,15 +387,15 @@
                 <div class="container" style="text-align: center;"><h1 class="about-h1">About</h1><br><h2>We Are The Home For Computer Science And Engineering Leaders</h2><p class="black bold">The IEEE Computer Society is the premier source for information, inspiration, and collaboration in computer science and engineering. Connecting members worldwide, the Computer Society empowers the people who advance technology by delivering tools for individuals at all stages of their professional careers. Our trusted resources include international conferences, peer-reviewed publications, a robust digital library, globally recognized standards, and continuous learning opportunities.<br><br>Copyright © CodeGeniX'22 by IEEE Computer Society Student Branch Chapter of SLTC<br><br></p>
                 </div>
             </section>
-            <section class="intro" id="intro">
-                    <video src="assets/img/intro.webm" autoplay muted loop plays-inline class="intro-video"></video>
-            </section>
+            
             <!-- <section class="cs" style="background-color: #ccb;">
                 <div class="container"><img src="assets/img/IEEE_CS_of_SLTC_LOGO-01.png" alt=""></div>
                 
             </section> -->
-
-            <section class="contact">
+            <div class="intro" id="intro">
+                <video src="assets/img/intro.webm" autoplay muted loop plays-inline class="intro-video"></video>
+        </div>
+            <section class="contact" id="contact">
                 <h1 align="center">Contact</h1>
                 <div class="contact-cont">
                     <div class="contact-card">
