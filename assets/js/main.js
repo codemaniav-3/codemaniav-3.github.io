@@ -79,7 +79,9 @@ function scrollActive(){
               sectionId = current.getAttribute('id')
 
         if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
-            document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.add('active-link')
+            document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.add('active-link');
+            history.pushState({}, "", "#" + sectionId);
+            document.querySelector('.section-details').innerText = "CodeMania v3.0 | " + sectionId.charAt(0).toUpperCase() +  sectionId.slice(1);
         }else{
             document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.remove('active-link')
         }
