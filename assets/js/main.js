@@ -146,7 +146,7 @@ sr.reveal(`.steps__card, .product__card, .questions__group, .footer`,{interval: 
 
 // Timer
 // Setup End Date for Countdown (getTime == Time in Milleseconds)
-let launchDate = new Date("Oct 12, 2022 23:59:59").getTime();
+let launchDate = new Date("Oct 12, 2022 23:56:00").getTime();
 // let RegClose = new Date("Oct 09, 2022 23:59:59").getTime();
 
 // Setup Timer to tick every 1 second

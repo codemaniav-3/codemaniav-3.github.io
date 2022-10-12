@@ -404,7 +404,7 @@ img{
   font-size: 1rem;
 }
 .h2col-home{
-  color:var(--first-color);
+  color:red;
 }
 .home-right {
   justify-content: right;
