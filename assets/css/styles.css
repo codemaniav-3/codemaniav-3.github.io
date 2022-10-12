@@ -706,9 +706,7 @@ img{
   
 
 }
-.step__img_left{
-  min-height: 150px;
-}
+
 .steps__container{
   gap: 2rem;
   padding-top: 1rem;
