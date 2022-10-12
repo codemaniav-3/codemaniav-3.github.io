@@ -1889,3 +1889,24 @@ img{
   font-size: 2rem;
   color: var(--first-color);
 }
+
+
+/* Loader */
+.loader {
+  background-color: var(--body-color);
+  height: 100vh;
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.loader img {
+  max-width: 100px;
+  max-height: 100px;
+  width: 100%;
+}
+.hidden {
+  display: none;
+}

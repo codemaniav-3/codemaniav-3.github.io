@@ -237,4 +237,10 @@ function toggleFullScreen(){
 }
 document.addEventListener("dblclick", () =>{
     toggleFullScreen();
-})
+});
+
+
+// Loader
+window.addEventListener("load", function(){
+    document.querySelector(".loader").classList.add("hidden");
+});
