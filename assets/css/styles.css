@@ -1006,7 +1006,7 @@ img{
   font-size: 1.2rem;
   font-weight: 600;
   text-align: justify;
-  margin-top: 3rem;
+  /* margin-top: 3rem; */
 }
 
 .bg-video{
@@ -1207,7 +1207,9 @@ img{
   .home__title{
     font-size: var(--h1-font-size);
   }
-
+  .spons_bg{
+    padding: 1rem;
+  }
   .steps__bg{
     padding: 2rem 1rem;
   }
@@ -1322,6 +1324,10 @@ img{
 
   .steps__container{
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  .spons_bg{
+    padding: 2.5rem;
   }
   .steps__bg{
     padding: 3.5rem 2.5rem;
@@ -1849,8 +1855,35 @@ img{
 
 /* ======Sponsors====== */
 #sponsors {
-  /* background-color: #fff; */
+  width: 100%;
+  /* margin-top: 5rem; */
+  background-color: #fff1;
+  /* padding-top: 3rem; */
+  padding-bottom: 3rem;
 }
 .spon-qbit{
   width: 60%;
+}
+#sponsors h1 {
+  width: 100% !important;
+  color: var(--first-color);
+  font-size: 3rem;
+  text-align: center;
+  border-bottom: 1px solid var(--first-color);
+  margin-bottom: 2rem;
+}
+.spons_bg{
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: hsl(45, 8%, 20%);
+  padding: 1rem 2rem 2rem;
+  border-radius: 1rem;
+}
+.spons_bg .plat-h{
+  padding-bottom: 1rem;
+  font-size: 2rem;
+  color: var(--first-color);
 }
