@@ -1908,3 +1908,51 @@ img{
 .hidden {
   display: none;
 }
+
+
+/* ================= OC ================= */
+.oc-card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #333;
+  width: 275px;
+  height: 350px;
+  padding: 1rem 0 0 0;
+  overflow: hidden;
+  border-radius: 10px;
+  /* border: 1px solid var(--first-color); */
+  /* border-left: 2px solid var(--first-color);
+  border-right: 2px solid #fff2;
+  border-bottom: 2px solid #fff2; */
+}
+.oc-card .up, .oc-card .down{
+  display: flex;
+  flex-direction: column;
+  /* row-gap: 10px; */
+  align-items: center;
+  justify-content: center;
+}
+
+.oc-card .down{
+  padding: 5px 0;
+  width: 100%;
+  background-color: var(--first-color);
+}
+
+.oc-card .up img{
+  max-width: 150px;
+  max-height: 150px;
+  border-radius: 50%;
+  padding: 5px;
+  border: 3px solid var(--first-color);
+  box-shadow: var(--first-color) 0px 0px 20px -5px;
+}
+
+.oc_container{
+  padding-top: 6rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+}
