@@ -1912,10 +1912,9 @@ img{
 
 /* ================= OC ================= */
 
-.contact-cont{
-  display: flex;
-}
 .oc-card{
+  /* border: -1px solid rgb(255, 179, 0); */
+  box-shadow: var(--first-color) 0px 0px 20px -7px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1932,6 +1931,7 @@ img{
   border-bottom: 2px solid #fff2; */
 }
 .oc-card .up, .oc-card .down{
+  
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -1939,11 +1939,32 @@ img{
   align-items: center;
   justify-content: center;
 }
-
+.oc-card .up {
+  row-gap: 0.1rem;
+}
 .oc-card .down{
-  padding: 5px 0;
+  border-top: 3px solid var(--first-color);
+  /* border: 3px transparent #fff4; */
+  /* box-shadow: var(--first-color) 0px 0px 20px -5px; */
+
+  padding: 3px 0;
   width: 100%;
-  background-color: var(--first-color);
+  background-color: rgba(245, 175, 0, 0.1);
+  color: #FFF;
+}
+.oc-card .down div a{
+  font-size: 1.7rem;
+  color: var(--first-color);
+}
+.oc-card .up h2{
+  margin-top: 0.9rem;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.oc-card .up p{
+  font-size: 0.7rem;
+  font-weight: 400;
 }
 
 .oc-card .up img{
@@ -1957,11 +1978,15 @@ img{
 }
 
 .oc_container{
-  padding-top: 2rem;
+  padding: 2rem 0;
   display: flex;
   flex-wrap: wrap;
   row-gap: 2rem;
   column-gap: 2rem;
   align-items: center ;
   justify-content: space-around;
+}
+
+.oc-card .down .buttons{
+  display: none;
 }
