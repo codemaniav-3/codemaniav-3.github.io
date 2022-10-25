@@ -1,1276 +1,1582 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- =======================SHARE PROPERTY IN WHATSAPP================= -->
+    <meta
+      name="description"
+      content="The IEEE Computer Society Student Branch Chapter of SLTC introduced CodeMania v3.0 as the project of the Month of CodeGeniX 2022 project series,"
+    />
+    <meta property="og:title" content="CODEMANIA v3.0 | SLTC IEEE CS" />
+    <meta property="og:url" content="https://codemaniav-3.github.io" />
+    <meta
+      property="og:image"
+      content="https://codemaniav-3.github.io/assets/img/flyer/5.jpeg"
+    />
+    <meta
+      property="og:image:secure_url"
+      content="https://codemaniav-3.github.io/assets/img/flyer/5.jpeg"
+    />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="300" />
+    <meta property="og:image:height" content="300" />
+    <meta property="og:image:alt" content="CODEMANIA v3.0 | SLTC IEEE CS" />
+    <meta property="og:type" content="CODEMANIA v3.0 official website" />
 
+    <!--=============== FAVICON ===============-->
+    <link
+      rel="shortcut icon"
+      href="assets/img/codegenix/logo1.png"
+      type="image/x-icon"
+    />
 
+    <!--=============== REMIX ICONS ===============-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
 
-  <!-- =======================SHARE PROPERTY IN WHATSAPP================= -->
-  <meta name="description"
-    content="The IEEE Computer Society Student Branch Chapter of SLTC introduced CodeMania v3.0 as the project of the Month of CodeGeniX 2022 project series," />
-  <meta property="og:title" content="CODEMANIA v3.0 | SLTC IEEE CS" />
-  <meta property="og:url" content="https://codemaniav-3.github.io" />
-  <meta property="og:image" content="https://codemaniav-3.github.io/assets/img/flyer/5.jpeg" />
-  <meta property="og:image:secure_url" content="https://codemaniav-3.github.io/assets/img/flyer/5.jpeg" />
-  <meta property="og:image:type" content="image/jpeg" />
-  <meta property="og:image:width" content="300" />
-  <meta property="og:image:height" content="300" />
-  <meta property="og:image:alt" content="CODEMANIA v3.0 | SLTC IEEE CS" />
-  <meta property="og:type" content="CODEMANIA v3.0 official website" />
+    <!-- ==============FONT AWESOME =============== -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
-  <!--=============== FAVICON ===============-->
-  <link rel="shortcut icon" href="assets/img/codegenix/logo1.png" type="image/x-icon">
+    <!-- ============= Google Fonts =============== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fugaz+One&family=Gemunu+Libre&family=Montserrat&family=Righteous&display=swap"
+      rel="stylesheet"
+    />
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css" />
 
-  <!--=============== REMIX ICONS ===============-->
-  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
 
-  <!-- ==============FONT AWESOME =============== -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title class="section-details">CodeMania v3.0 | SLTC IEEE</title>
+  </head>
 
-  <!-- ============= Google Fonts =============== -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fugaz+One&family=Gemunu+Libre&family=Montserrat&family=Righteous&display=swap"
-    rel="stylesheet">
-  <!--=============== CSS ===============-->
-  <link rel="stylesheet" href="assets/css/styles.css">
-
-  <!-- Link Swiper's CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
-
-  <title class="section-details">CodeMania v3.0 | SLTC IEEE</title>
-</head>
-
-<body>
-  <div class="loader">
-    <img src="assets/img/loading.svg" alt="">
-  </div>
-  <!-- <script>
+  <body>
+    <div class="loader">
+      <img src="assets/img/loading.svg" alt="" />
+    </div>
+    <!-- <script>
             document.addEventListener("load", function(){
                 document.querySelector(".loader").classList.add("hidden");
             });
         </script> -->
-  <!--==================== HEADER ====================-->
-  <header class="header" id="header">
-    <nav class="nav container">
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#" class="nav__logo">
+          <img
+            src="assets/img/CodeManiav3.0Logo.png"
+            alt="Logo"
+            class="nav-logo"
+          />
+        </a>
 
-      <a href="#" class="nav__logo">
-        <img src="assets/img/CodeManiav3.0Logo.png" alt="Logo" class="nav-logo">
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link active-link">Home</a>
+            </li>
+            <li class="nav__item" style="display: none">
+              <a href="#ieeecs" class="nav__link">IEEE CS</a>
+            </li>
+            <li class="nav__item">
+              <a href="#timeline" class="nav__link">Timeline</a>
+            </li>
+            <li class="nav__item" style="display: none">
+              <a href="#prizes" class="nav__link">Prizes</a>
+            </li>
+            <li class="nav__item">
+              <a href="#rules" class="nav__link">Rules</a>
+            </li>
+            <li class="nav__item">
+              <a href="#register" class="nav__link">Register</a>
+            </li>
+            <li class="nav__item" style="display: none">
+              <a href="#codegenix" class="nav__link">CodeGenix2022</a>
+            </li>
+            <li class="nav__item" style="display: none">
+              <a href="#roadtocodemania" class="nav__link">Road to CodeMania</a>
+            </li>
+            <li class="nav__item">
+              <a href="#sponsors" class="nav__link">Sponsors</a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">About</a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">Contact</a>
+            </li>
+          </ul>
 
-      </a>
-
-      <div class="nav__menu" id="nav-menu">
-        <ul class="nav__list">
-          <li class="nav__item">
-            <a href="#home" class="nav__link active-link">Home</a>
-          </li>
-          <li class="nav__item" style="display: none;">
-            <a href="#ieeecs" class="nav__link">IEEE CS</a>
-          </li>
-          <li class="nav__item">
-            <a href="#timeline" class="nav__link">Timeline</a>
-          </li>
-          <li class="nav__item" style="display: none;">
-            <a href="#prizes" class="nav__link">Prizes</a>
-          </li>
-          <li class="nav__item">
-            <a href="#rules" class="nav__link">Rules</a>
-          </li>
-          <li class="nav__item">
-            <a href="#register" class="nav__link">Register</a>
-          </li>
-          <li class="nav__item" style="display: none;">
-            <a href="#codegenix" class="nav__link">CodeGenix2022</a>
-          </li>
-          <li class="nav__item" style="display: none;">
-            <a href="#roadtocodemania" class="nav__link">Road to CodeMania</a>
-          </li>
-          <li class="nav__item">
-            <a href="#sponsors" class="nav__link">Sponsors</a>
-          </li>
-          <li class="nav__item">
-            <a href="#about" class="nav__link">About</a>
-          </li>
-          <li class="nav__item">
-            <a href="#contact" class="nav__link">Contact</a>
-          </li>
-        </ul>
-
-        <div class="nav__close" id="nav-close">
-          <i class="ri-close-line"></i>
-        </div>
-      </div>
-
-      <div class="nav__btns">
-        <!-- Theme change button -->
-        <i class="ri-moon-line change-theme" id="theme-button"></i>
-
-        <div class="nav__toggle" id="nav-toggle">
-          <i class="ri-menu-line"></i>
-        </div>
-      </div>
-    </nav>
-  </header>
-  <a onclick="toggleFullScreen()" style="cursor: pointer;" class="ful-scrn" id="full-screen"><i
-      class="fas fa-expand full-screen-btn"></i></a>
-
-  <main class="main">
-    <!--==================== HOME ====================-->
-
-    <section class="home-page" id="home">
-      <video src="assets/img/bg.webm" autoplay muted loop plays-inline class="bg-video"
-        style="filter: brightness(1.4) contrast(1.22) saturate(1.72) hue-rotate(100.8deg); position: fixed;"></video>
-      <div class="ovarlay-bg"
-        style="background-color:#0009; position:fixed; height: 100vh; width: 100%; left:0; top:0; z-index: -1;"></div>
-
-
-      <h1 align="center" style="padding-top: 6rem;">Meet the Team</h1>
-      <div class="oc_container container">
-
-        <!-- Chairman card strat -->
-
-        <div class="oc-card">
-          <div class="up">
-            <img src="assets/img/oc/saketha-p.jpeg" alt="Saketha Pulasthi">
-            <h2>Saketha Pulasthi</h2>
-            <h3>Student Advisor</h3>
-            <p>Chairman<br>IEEE CS of SLTC</p>
-          </div>
-          <div class="down">
-            <div class="buttons"><a href="tel:+94711651919">Call</a>
-              <a href="mailto:sakethap@sltc.ac.lk">Email</a>
-            </div>
-            <div class="social-link">
-              <a href="https://wa.me/94711651919?text=Hi%20Saketha,%20my%20name%20is" class="wa"><i
-                  class="ri-whatsapp-line"></i></a>
-              <a href="mailto:sakethap@sltc.ac.lk" class="email"><i class="ri-mail-line"></i></a>
-            </div>
+          <div class="nav__close" id="nav-close">
+            <i class="ri-close-line"></i>
           </div>
         </div>
 
-        <!-- 01 -->
+        <div class="nav__btns">
+          <!-- Theme change button -->
+          <i class="ri-moon-line change-theme" id="theme-button"></i>
 
-
-        <div class="oc-card">
-          <div class="up">
-            <img src="assets/img/oc/c1.jpg" alt="charitha lakshitha">
-            <h2>Charitha Lakshitha</h2>
-            <!-- <h3>ChairmanTeam Member</h3> -->
-
-            <p>Chairman<br>Codemania v3.0 project</p>
-          </div>
-          <div class="down">
-            <div class="buttons"><a href="tel:+94778114754">Call</a>
-              <a href="mailto:21ug1244@sltc.ac.lk">Email</a>
-            </div>
-            <div class="social-link">
-              <a href="https://wa.me/94778114754" class="wa"><i class="ri-whatsapp-line"></i></a>
-              <a href="mailto:21ug1244@sltc.ac.lk" class="email"><i class="ri-mail-line"></i></a>
-            </div>
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="ri-menu-line"></i>
           </div>
         </div>
+      </nav>
+    </header>
+    <a
+      onclick="toggleFullScreen()"
+      style="cursor: pointer"
+      class="ful-scrn"
+      id="full-screen"
+      ><i class="fas fa-expand full-screen-btn"></i
+    ></a>
 
-        <!-- 02 -->
+    <main class="main">
+      <!--==================== HOME ====================-->
 
-        <div class="oc-card">
-          <div class="up">
-            <img src="assets/img/oc/c2.jpg" alt="kushan gayantha">
-            <h2>kushan gayantha</h2>
-            <!-- <h3>ChairmanTeam Member</h3> -->
+      <section class="home-page" id="home">
+        <video
+          src="assets/img/bg.webm"
+          autoplay
+          muted
+          loop
+          plays-inline
+          class="bg-video"
+          style="
+            filter: brightness(1.4) contrast(1.22) saturate(1.72)
+              hue-rotate(100.8deg);
+            position: fixed;
+          "
+        ></video>
+        <div
+          class="ovarlay-bg"
+          style="
+            background-color: #0009;
+            position: fixed;
+            height: 100vh;
+            width: 100%;
+            left: 0;
+            top: 0;
+            z-index: -1;
+          "
+        ></div>
 
-            <p>Vise Chairman<br>Codemania v3.0 project</p>
-          </div>
-          <div class="down">
-            <div class="buttons"><a href="tel:+94712720033">Call</a>
-              <a href="mailto:21ug0178@sltc.ac.lk">Email</a>
+        <h1 align="center" style="padding-top: 6rem">Meet the Team</h1>
+        <div class="oc_container container">
+          <!-- Chairman card strat -->
+          <div class="stud-adv team-cont">
+            <div class="oc-card">
+              <div class="up">
+                <img src="assets/img/oc/team-ad1.jpeg" alt="Saketha Pulasthi" />
+                <h2>Dr. Dhammika Elkaduwe</h2>
+                <h3>Academic Advisor</h3>
+                <p>Head - School of IT & Computing</p>
+              </div>
+              <div class="down">
+                <div class="buttons">
+                  <a href="tel:+94711651919">Call</a>
+                  <a href="mailto:sakethap@sltc.ac.lk">Email</a>
+                </div>
+                <div class="social-link">
+                  <a
+                    href="https://www.linkedin.com/in/dhammika-elkaduwe-74030613/"
+                    class="li"
+                    ><i class="ri-linkedin-line"></i
+                  ></a>
+                  <a
+                    href="https://wa.me/94711651919?text=Hi%20Saketha,%20my%20name%20is"
+                    class="wa"
+                    ><i class="ri-whatsapp-line"></i
+                  ></a>
+                  <a href="mailto:sakethap@sltc.ac.lk" class="email"
+                    ><i class="ri-mail-line"></i
+                  ></a>
+                </div>
+              </div>
             </div>
-            <div class="social-link">
-              <a href="https://wa.me/94712720033" class="wa"><i class="ri-whatsapp-line"></i></a>
-              <a href="mailto:21ug0178@sltc.ac.lk" class="email"><i class="ri-mail-line"></i></a>
+
+            <!-- chaime -->
+
+            <div class="oc-card">
+              <div class="up">
+                <img
+                  src="assets/img/oc/saketha-p.jpeg"
+                  alt="Saketha Pulasthi"
+                />
+                <h2>Saketha Pulasthi</h2>
+                <h3>Student Advisor</h3>
+                <p>Chairman<br />IEEE CS of SLTC</p>
+              </div>
+              <div class="down">
+                <div class="buttons">
+                  <a href="tel:+94711651919">Call</a>
+                  <a href="mailto:sakethap@sltc.ac.lk">Email</a>
+                </div>
+                <div class="social-link">
+                  <a
+                    href="https://wa.me/94711651919?text=Hi%20Saketha,%20my%20name%20is"
+                    class="wa"
+                    ><i class="ri-whatsapp-line"></i
+                  ></a>
+                  <a href="mailto:sakethap@sltc.ac.lk" class="email"
+                    ><i class="ri-mail-line"></i
+                  ></a>
+                </div>
+              </div>
             </div>
           </div>
+
+          <!-- 01 -->
+          <div class="chair team-cont">
+            <div class="oc-card">
+              <div class="up">
+                <img src="assets/img/oc/c1.jpg" alt="charitha lakshitha" />
+                <h2>Charitha Lakshitha</h2>
+
+                <p>Chairman<br />Codemania v3.0 project</p>
+              </div>
+              <div class="down">
+                <div class="buttons">
+                  <a href="tel:+94778114754">Call</a>
+                  <a href="mailto:21ug1244@sltc.ac.lk">Email</a>
+                </div>
+                <div class="social-link">
+                  <a href="https://wa.me/94778114754" class="wa"
+                    ><i class="ri-whatsapp-line"></i
+                  ></a>
+                  <a href="mailto:21ug1244@sltc.ac.lk" class="email"
+                    ><i class="ri-mail-line"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+
+            <!-- 02 -->
+
+            <div class="oc-card">
+              <div class="up">
+                <img src="assets/img/oc/c2.jpg" alt="kushan gayantha" />
+                <h2>kushan gayantha</h2>
+                <!-- <h3>ChairmanTeam Member</h3> -->
+
+                <p>Vise Chairman<br />Codemania v3.0 project</p>
+              </div>
+              <div class="down">
+                <div class="buttons">
+                  <a href="tel:+94712720033">Call</a>
+                  <a href="mailto:21ug0178@sltc.ac.lk">Email</a>
+                </div>
+                <div class="social-link">
+                  <a href="https://wa.me/94712720033" class="wa"
+                    ><i class="ri-whatsapp-line"></i
+                  ></a>
+                  <a href="mailto:21ug0178@sltc.ac.lk" class="email"
+                    ><i class="ri-mail-line"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+
+            <!-- 03 -->
+
+            <div class="oc-card">
+              <div class="up">
+                <img src="assets/img/oc/c3.jpg" alt="Manul Thanura" />
+                <h2>Manul Thanura</h2>
+                <!-- <h3>ChairmanTeam Member</h3> -->
+
+                <p>Vise Chairman<br />Codemania v3.0 project</p>
+              </div>
+              <div class="down">
+                <div class="buttons">
+                  <a href="tel:+94714545569">Call</a>
+                  <a href="mailto:21ug0619@sltc.ac.lk">Email</a>
+                </div>
+                <div class="social-link">
+                  <a href="https://wa.me/94714545569" class="wa"
+                    ><i class="ri-whatsapp-line"></i
+                  ></a>
+                  <a href="mailto:21ug0619@sltc.ac.lk" class="email"
+                    ><i class="ri-mail-line"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Chairman card end -->
+
+          <!-- Secretary Team card start -->
+          <!-- 01 -->
+        <div class="team-cont">
+          <div class="oc-card">
+            <div class="up">
+              <img src="assets/img/oc/s2.jpg" alt="Ama Perera" />
+              <h2>Ama Perera</h2>
+
+              <p>Secretary Team Head<br />Codemania v3.0 project</p>
+            </div>
+            <div class="down">
+              <div class="buttons">
+                <a href="tel:+94710198913">Call</a>
+                <a href="mailto:21ug0027@sltc.ac.lk">Email</a>
+              </div>
+              <div class="social-link">
+                <a href="https://wa.me/94710198913" class="wa"
+                  ><i class="ri-whatsapp-line"></i
+                ></a>
+                <a href="mailto:21ug0027@sltc.ac.lk" class="email"
+                  ><i class="ri-mail-line"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 02 -->
+
+          <div class="oc-card">
+            <div class="up">
+              <img src="assets/img/oc/s1.jpeg" alt="Sithuli Dabarera" />
+              <h2>Sithuli Dabarera</h2>
+
+              <p>Secretary Team Deputy Head<br />Codemania v3.0 project</p>
+            </div>
+            <div class="down">
+              <div class="buttons">
+                <a href="tel:+94783799085">Call</a>
+                <a href="mailto:21ug0042@sltc.ac.lk">Email</a>
+              </div>
+              <div class="social-link">
+                <a href="https://wa.me/94783799085" class="wa"
+                  ><i class="ri-whatsapp-line"></i
+                ></a>
+                <a href="mailto:21ug0042@sltc.ac.lk" class="email"
+                  ><i class="ri-mail-line"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 03 -->
+          <div class="oc-card">
+            <div class="up">
+              <img src="assets/img/oc/s3.jpg" alt="Maleesha Chandrasekara" />
+              <h2>Maleesha Chandrasekara</h2>
+
+              <p>Secretary Team Member<br />Codemania v3.0 project</p>
+            </div>
+            <div class="down">
+              <div class="buttons">
+                <a href="tel:+94767169833">Call</a>
+                <a href="mailto:22ug1-0490@sltc.ac.lk">Email</a>
+              </div>
+              <div class="social-link">
+                <a href="https://wa.me/94767169833" class="wa"
+                  ><i class="ri-whatsapp-line"></i
+                ></a>
+                <a href="mailto:22ug1-0490@sltc.ac.lk" class="email"
+                  ><i class="ri-mail-line"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 04 -->
+          <div class="oc-card">
+            <div class="up">
+              <img src="assets/img/oc/s4.jpg" alt="Sewwandi Rathnayaka " />
+              <h2>Sewwandi Rathnayaka</h2>
+
+              <p>Secretary Team Member<br />Codemania v3.0 project</p>
+            </div>
+            <div class="down">
+              <div class="buttons">
+                <a href="tel:+94701028412">Call</a>
+                <a href="mailto:22ug1-0805@sltc.ac.lk">Email</a>
+              </div>
+              <div class="social-link">
+                <a href="https://wa.me/94701028412" class="wa"
+                  ><i class="ri-whatsapp-line"></i
+                ></a>
+                <a href="mailto:22ug1-0805@sltc.ac.lk" class="email"
+                  ><i class="ri-mail-line"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          </div><div class="team-cont">
+          <!-- Secretary Team card End -->
+
+          <!-- Technical Team Card start -->
+          <!-- 01 -->
+
+          <div class="oc-card">
+            <div class="up">
+              <img src="assets/img/oc/sahank.jpg" alt="Sahan Kaushalya " />
+              <h2>Sahan Kaushalya</h2>
+
+              <p>Technical Team Head<br />Codemania v3.0 project</p>
+            </div>
+            <div class="down">
+              <div class="buttons">
+                <a href="tel:+94787520742">Call</a>
+                <a href="mailto:21ug0625@sltc.ac.lk">Email</a>
+              </div>
+              <div class="social-link">
+                <a href="https://wa.me/94787520742" class="wa"
+                  ><i class="ri-whatsapp-line"></i
+                ></a>
+                <a href="mailto:21ug0625@sltc.ac.lk" class="email"
+                  ><i class="ri-mail-line"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 02 -->
+
+          <div class="oc-card">
+            <div class="up">
+              <img src="assets/img/oc/t2.jpg" alt="Chathuranga Bandara " />
+              <h2>Chathuranga Bandara</h2>
+
+              <p>Technical Team Member<br />Codemania v3.0 project</p>
+            </div>
+            <div class="down">
+              <div class="buttons">
+                <a href="tel:+94785765593">Call</a>
+                <a href="mailto:21ug1289@sltc.ac.lk">Email</a>
+              </div>
+              <div class="social-link">
+                <a href="https://wa.me/94785765593" class="wa"
+                  ><i class="ri-whatsapp-line"></i
+                ></a>
+                <a href="mailto:21ug1289@sltc.ac.lk" class="email"
+                  ><i class="ri-mail-line"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 03 -->
+
+          <div class="oc-card">
+            <div class="up">
+              <img src="assets/img/oc/t3.jpg" alt="Lahiru Navod " />
+              <h2>Lahiru Navod</h2>
+
+              <p>Technical Team Member<br />Codemania v3.0 project</p>
+            </div>
+            <div class="down">
+              <div class="buttons">
+                <a href="tel:+94772192966">Call</a>
+                <a href="mailto:22ug1-0031@sltc.ac.lk">Email</a>
+              </div>
+              <div class="social-link">
+                <a href="https://wa.me/94772192966" class="wa"
+                  ><i class="ri-whatsapp-line"></i
+                ></a>
+                <a href="mailto:22ug1-0031@sltc.ac.lk" class="email"
+                  ><i class="ri-mail-line"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 04 -->
+
+          <div class="oc-card">
+            <div class="up">
+              <img src="assets/img/oc/t4.jpg" alt="G.D.K.B. Gamaethige " />
+              <h2>G.D.K.B. Gamaethige</h2>
+
+              <p>Technical Team Member<br />Codemania v3.0 project</p>
+            </div>
+            <div class="down">
+              <div class="buttons">
+                <a href="tel:+94714985833">Call</a>
+                <a href="mailto:22ug1-0498@sltc.ac.lk">Email</a>
+              </div>
+              <div class="social-link">
+                <a href="https://wa.me/94714985833" class="wa"
+                  ><i class="ri-whatsapp-line"></i
+                ></a>
+                <a href="mailto:22ug1-0498@sltc.ac.lk" class="email"
+                  ><i class="ri-mail-line"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 05 -->
+
+          <div class="oc-card">
+            <div class="up">
+              <img src="assets/img/oc/t5.jpg" alt="Himansa Wickramasinghe" />
+              <h2>Himansa Wickramasinghe</h2>
+
+              <p>Technical Team Member<br />Codemania v3.0 project</p>
+            </div>
+            <div class="down">
+              <div class="buttons">
+                <a href="tel:+94701028412">Call</a>
+                <a href="mailto:22ug1-0789@sltc.ac.lk">Email</a>
+              </div>
+              <div class="social-link">
+                <a href="https://wa.me/94701028412" class="wa"
+                  ><i class="ri-whatsapp-line"></i
+                ></a>
+                <a href="mailto:22ug1-0789@sltc.ac.lk" class="email"
+                  ><i class="ri-mail-line"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 06 -->
+
+          <div class="oc-card">
+            <div class="up">
+              <img src="assets/img/oc/t5.jpg" alt="Chamindu Kavishan" />
+              <h2>Chamindu Kavishan</h2>
+
+              <p>Technical Team Member<br />Codemania v3.0 project</p>
+            </div>
+            <div class="down">
+              <div class="buttons">
+                <a href="tel:+94762074453">Call</a>
+                <a href="mailto:21ug0733@sltc.ac.lk">Email</a>
+              </div>
+              <div class="social-link">
+                <a href="https://wa.me/94762074453" class="wa"
+                  ><i class="ri-whatsapp-line"></i
+                ></a>
+                <a href="mailto:21ug0733@sltc.ac.lk" class="email"
+                  ><i class="ri-mail-line"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Technical Team Card end -->
+          </div><div class="team-cont">
+          <!-- Programming Team Card end -->
+
+          <!-- 01 -->
+
+          <div class="oc-card">
+            <div class="up">
+              <img src="assets/img/oc/p1.jpeg" alt="Anjula Jayasinghe" />
+              <h2>Anjula Jayasinghe</h2>
+
+              <p>Program Team Team Head<br />Codemania v3.0 project</p>
+            </div>
+            <div class="down">
+              <div class="buttons">
+                <a href="tel:+94703813836">Call</a>
+                <a href="mailto:21ug0845@sltc.ac.lk">Email</a>
+              </div>
+              <div class="social-link">
+                <a href="https://wa.me/94703813836" class="wa"
+                  ><i class="ri-whatsapp-line"></i
+                ></a>
+                <a href="mailto:21ug0845@sltc.ac.lk" class="email"
+                  ><i class="ri-mail-line"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 02 -->
+
+          <div class="oc-card">
+            <div class="up">
+              <img src="assets/img/oc/p2.jpg" alt="Priyanwada Wickramarathne" />
+              <h2>Priyanwada Wickramarathne</h2>
+
+              <p>Program Team Team Deputy Head<br />Codemania v3.0 project</p>
+            </div>
+            <div class="down">
+              <div class="buttons">
+                <a href="tel:+94703270241">Call</a>
+                <a href="mailto:21ug0987@sltc.ac.lk">Email</a>
+              </div>
+              <div class="social-link">
+                <a href="https://wa.me/94703270241" class="wa"
+                  ><i class="ri-whatsapp-line"></i
+                ></a>
+                <a href="mailto:21ug0987@sltc.ac.lk" class="email"
+                  ><i class="ri-mail-line"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 03 -->
+
+          <div class="oc-card">
+            <div class="up">
+              <img src="assets/img/oc/p3.jpg" alt="Tathila Siriwardhana" />
+              <h2>Tathila Siriwardhana</h2>
+
+              <p>Program Team Member<br />Codemania v3.0 project</p>
+            </div>
+            <div class="down">
+              <div class="buttons">
+                <a href="tel:+94769800017">Call</a>
+                <a href="mailto:22ug1-0126@sltc.ac.lk">Email</a>
+              </div>
+              <div class="social-link">
+                <a href="https://wa.me/94769800017" class="wa"
+                  ><i class="ri-whatsapp-line"></i
+                ></a>
+                <a href="mailto:22ug1-0126@sltc.ac.lk" class="email"
+                  ><i class="ri-mail-line"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 04 -->
+
+          <div class="oc-card">
+            <div class="up">
+              <img src="assets/img/oc/p4.jpg" alt="Vishwa Prasanjana" />
+              <h2>Vishwa Prasanjana</h2>
+
+              <p>Program Team Member<br />Codemania v3.0 project</p>
+            </div>
+            <div class="down">
+              <div class="buttons">
+                <a href="tel:+94710687472">Call</a>
+                <a href="mailto:22ug1-0521@sltc.ac.lk">Email</a>
+              </div>
+              <div class="social-link">
+                <a href="https://wa.me/94710687472" class="wa"
+                  ><i class="ri-whatsapp-line"></i
+                ></a>
+                <a href="mailto:22ug1-0521@sltc.ac.lk" class="email"
+                  ><i class="ri-mail-line"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 05 -->
+
+          <div class="oc-card">
+            <div class="up">
+              <img src="assets/img/oc/p5.jpeg" alt="Shehan Diluka" />
+              <h2>Shehan Diluka</h2>
+
+              <p>Program Team Member<br />Codemania v3.0 project</p>
+            </div>
+            <div class="down">
+              <div class="buttons">
+                <a href="tel:+94776958064">Call</a>
+                <a href="mailto:22ug1-0262@sltc.ac.lk">Email</a>
+              </div>
+              <div class="social-link">
+                <a href="https://wa.me/94776958064" class="wa"
+                  ><i class="ri-whatsapp-line"></i
+                ></a>
+                <a href="mailto:22ug1-0262@sltc.ac.lk" class="email"
+                  ><i class="ri-mail-line"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 06 -->
+
+          <div class="oc-card">
+            <div class="up">
+              <img src="assets/img/oc/p6.jpg" alt="Thilina Sirinaga" />
+              <h2>Thilina Sirinaga</h2>
+
+              <p>Program Team Member<br />Codemania v3.0 project</p>
+            </div>
+            <div class="down">
+              <div class="buttons">
+                <a href="tel:+94710508698">Call</a>
+                <a href="mailto:22ug1-0072@sltc.ac.lk">Email</a>
+              </div>
+              <div class="social-link">
+                <a href="https://wa.me/94710508698" class="wa"
+                  ><i class="ri-whatsapp-line"></i
+                ></a>
+                <a href="mailto:22ug1-0072@sltc.ac.lk" class="email"
+                  ><i class="ri-mail-line"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Programming Team Card end -->
+          </div><div class="team-cont">
+          <!-- Design Team Card start -->
+          <!-- 01 -->
+
+          <div class="oc-card">
+            <div class="up">
+              <img src="assets/img/oc/d1.jpg" alt="Ishan Nayanajith" />
+              <h2>Ishan Nayanajith</h2>
+
+              <p>Team Head<br />Codemania v3.0 project</p>
+            </div>
+            <div class="down">
+              <div class="buttons">
+                <a href="tel:+94712414095">Call</a>
+                <a href="mailto:21ug0951@sltc.ac.lk">Email</a>
+              </div>
+              <div class="social-link">
+                <a href="https://wa.me/94712414095" class="wa"
+                  ><i class="ri-whatsapp-line"></i
+                ></a>
+                <a href="mailto:21ug0951@sltc.ac.lk" class="email"
+                  ><i class="ri-mail-line"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 02 -->
+
+          <div class="oc-card">
+            <div class="up">
+              <img src="assets/img/oc/d2.jpg" alt="Sakindu Silva" />
+              <h2>Sakindu Silva</h2>
+
+              <p>Team Deputy Head<br />Codemania v3.0 project</p>
+            </div>
+            <div class="down">
+              <div class="buttons">
+                <a href="tel:+94774177678">Call</a>
+                <a href="mailto:21ug0973@sltc.ac.lk">Email</a>
+              </div>
+              <div class="social-link">
+                <a href="https://wa.me/94774177678" class="wa"
+                  ><i class="ri-whatsapp-line"></i
+                ></a>
+                <a href="mailto:21ug0973@sltc.ac.lk" class="email"
+                  ><i class="ri-mail-line"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 03 -->
+
+          <div class="oc-card">
+            <div class="up">
+              <img src="assets/img/oc/d3.png" alt="Thanura Rukshan" />
+              <h2>Thanura Rukshan</h2>
+
+              <p>Design Team Member<br />Codemania v3.0 project</p>
+            </div>
+            <div class="down">
+              <div class="buttons">
+                <a href="tel:+94779371866">Call</a>
+                <a href="mailto:22ug1-0529@sltc.ac.lk">Email</a>
+              </div>
+              <div class="social-link">
+                <a href="https://wa.me/94779371866" class="wa"
+                  ><i class="ri-whatsapp-line"></i
+                ></a>
+                <a href="mailto:22ug1-0529@sltc.ac.lk" class="email"
+                  ><i class="ri-mail-line"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 04 -->
+
+          <div class="oc-card">
+            <div class="up">
+              <img src="assets/img/oc/d4.jpeg" alt="lakshitha madushan" />
+              <h2>lakshitha madushan</h2>
+
+              <p>Design Team Member<br />Codemania v3.0 project</p>
+            </div>
+            <div class="down">
+              <div class="buttons">
+                <a href="tel:+94714947564">Call</a>
+                <a href="mailto:22ug1-0824@sltc.ac.lk">Email</a>
+              </div>
+              <div class="social-link">
+                <a href="https://wa.me/94714947564" class="wa"
+                  ><i class="ri-whatsapp-line"></i
+                ></a>
+                <a href="mailto:22ug1-0824@sltc.ac.lk" class="email"
+                  ><i class="ri-mail-line"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 05 -->
+
+          <div class="oc-card">
+            <div class="up">
+              <img src="assets/img/oc/d5.jpg" alt="Arjuna Balasooriya" />
+              <h2>Arjuna Balasooriya</h2>
+
+              <p>Design Team Member<br />Codemania v3.0 project</p>
+            </div>
+            <div class="down">
+              <div class="buttons">
+                <a href="tel:+94718797862">Call</a>
+                <a href="mailto:21ug0947@sltc.ac.lk">Email</a>
+              </div>
+              <div class="social-link">
+                <a href="https://wa.me/94718797862" class="wa"
+                  ><i class="ri-whatsapp-line"></i
+                ></a>
+                <a href="mailto:21ug0947@sltc.ac.lk" class="email"
+                  ><i class="ri-mail-line"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 06 -->
+
+          <div class="oc-card">
+            <div class="up">
+              <img src="assets/img/oc/d5.jpg" alt="Januka Navodya " />
+              <h2>Januka Navodya</h2>
+
+              <p>Design Team Member<br />Codemania v3.0 project</p>
+            </div>
+            <div class="down">
+              <div class="buttons">
+                <a href="tel:+94070104770">Call</a>
+                <a href="mailto:21ug1056@sltc.ac.lk">Email</a>
+              </div>
+              <div class="social-link">
+                <a href="https://wa.me/94070104770" class="wa"
+                  ><i class="ri-whatsapp-line"></i
+                ></a>
+                <a href="mailto:21ug1056@sltc.ac.lk" class="email"
+                  ><i class="ri-mail-line"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Design Team Card End -->
+          </div><div class="team-cont">
+          <!-- Moderating  Team Card End -->
+
+          <!-- 01 -->
+
+          <div class="oc-card">
+            <div class="up">
+              <img src="assets/img/oc/m1.jpg" alt="Yashodha Disanayake " />
+              <h2>Yashodha Disanayake</h2>
+
+              <p>Moderating Team Member<br />Codemania v3.0 project</p>
+            </div>
+            <div class="down">
+              <div class="buttons">
+                <a href="tel:+94701944956">Call</a>
+                <a href="mailto:21ug0319@sltc.ac.lk">Email</a>
+              </div>
+              <div class="social-link">
+                <a href="https://wa.me/94701944956" class="wa"
+                  ><i class="ri-whatsapp-line"></i
+                ></a>
+                <a href="mailto:21ug0319@sltc.ac.lk" class="email"
+                  ><i class="ri-mail-line"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 02 -->
+
+          <div class="oc-card">
+            <div class="up">
+              <img src="assets/img/oc/m2.jpg" alt="Vimangsa Rajinee" />
+              <h2>Vimangsa Rajinee</h2>
+
+              <p>Moderating Team Member<br />Codemania v3.0 project</p>
+            </div>
+            <div class="down">
+              <div class="buttons">
+                <a href="tel:+94775437969">Call</a>
+                <a href="mailto:21ug0626@sltc.ac.lk">Email</a>
+              </div>
+              <div class="social-link">
+                <a href="https://wa.me/94775437969" class="wa"
+                  ><i class="ri-whatsapp-line"></i
+                ></a>
+                <a href="mailto:21ug0626@sltc.ac.lk" class="email"
+                  ><i class="ri-mail-line"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Moderating  Team Card End -->
+          </div><div class="team-cont">
+          <!-- Coordination   Team Card strt -->
+          <!-- 01 -->
+
+          <div class="oc-card">
+            <div class="up">
+              <img src="assets/img/oc/coo1.jpg" alt="Chalani Rathnayake" />
+              <h2>Chalani Rathnayake</h2>
+
+              <p>Coordination Team Head<br />Codemania v3.0 project</p>
+            </div>
+            <div class="down">
+              <div class="buttons">
+                <a href="tel:+94701658909">Call</a>
+                <a href="mailto:21ug0614@sltc.ac.lk">Email</a>
+              </div>
+              <div class="social-link">
+                <a href="https://wa.me/94701658909" class="wa"
+                  ><i class="ri-whatsapp-line"></i
+                ></a>
+                <a href="mailto:21ug0614@sltc.ac.lk" class="email"
+                  ><i class="ri-mail-line"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 02 -->
+
+          <div class="oc-card">
+            <div class="up">
+              <img src="assets/img/oc/coo2.jpg" alt="Paboda Marasinghe" />
+              <h2>Paboda Marasinghe</h2>
+
+              <p>Coordination Team Deputy Head<br />Codemania v3.0 project</p>
+            </div>
+            <div class="down">
+              <div class="buttons">
+                <a href="tel:+94786042142">Call</a>
+                <a href="mailto:21ug0052@sltc.ac.lk">Email</a>
+              </div>
+              <div class="social-link">
+                <a href="https://wa.me/94786042142" class="wa"
+                  ><i class="ri-whatsapp-line"></i
+                ></a>
+                <a href="mailto:21ug0052@sltc.ac.lk" class="email"
+                  ><i class="ri-mail-line"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 03 -->
+
+          <div class="oc-card">
+            <div class="up">
+              <img src="assets/img/oc/coo3.jpg" alt="Kavindu Dedunupitiya" />
+              <h2>Kavindu Dedunupitiya</h2>
+
+              <p>Coordination Team Member<br />Codemania v3.0 project</p>
+            </div>
+            <div class="down">
+              <div class="buttons">
+                <a href="tel:+94740776521">Call</a>
+                <a href="mailto:22ug1-0812@sltc.ac.lk">Email</a>
+              </div>
+              <div class="social-link">
+                <a href="https://wa.me/94740776521" class="wa"
+                  ><i class="ri-whatsapp-line"></i
+                ></a>
+                <a href="mailto:22ug1-0812@sltc.ac.lk" class="email"
+                  ><i class="ri-mail-line"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Coordination   Team Card End -->
+          </div><div class="team-cont">
+          <!-- Content Creation Team Card End -->
+
+          <!-- 01 -->
+
+          <div class="oc-card">
+            <div class="up">
+              <img src="assets/img/oc/co1.jpg" alt="Tharushi Liyanage " />
+              <h2>Tharushi Liyanage</h2>
+
+              <p>Content Creation Team Head<br />Codemania v3.0 project</p>
+            </div>
+            <div class="down">
+              <div class="buttons">
+                <a href="tel:+94760023949">Call</a>
+                <a href="mailto:21ug0045@sltc.ac.lk">Email</a>
+              </div>
+              <div class="social-link">
+                <a href="https://wa.me/94760023949" class="wa"
+                  ><i class="ri-whatsapp-line"></i
+                ></a>
+                <a href="mailto:21ug0045@sltc.ac.lk" class="email"
+                  ><i class="ri-mail-line"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 02 -->
+
+          <div class="oc-card">
+            <div class="up">
+              <img src="assets/img/oc/co2.jpg" alt="Tharuka Nandasiri " />
+              <h2>Tharuka Nandasiri</h2>
+
+              <p>Content Creation Team Member<br />Codemania v3.0 project</p>
+            </div>
+            <div class="down">
+              <div class="buttons">
+                <a href="tel:+94767405599">Call</a>
+                <a href="mailto:22ug1-0788@sltc.ac.lk">Email</a>
+              </div>
+              <div class="social-link">
+                <a href="https://wa.me/94767405599" class="wa"
+                  ><i class="ri-whatsapp-line"></i
+                ></a>
+                <a href="mailto:22ug1-0788@sltc.ac.lk" class="email"
+                  ><i class="ri-mail-line"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 03 -->
+
+          <div class="oc-card">
+            <div class="up">
+              <img src="assets/img/oc/co3.jpg" alt="Navod Anjalo" />
+              <h2>Navod Anjalo</h2>
+
+              <p>Content Creation Team Member<br />Codemania v3.0 project</p>
+            </div>
+            <div class="down">
+              <div class="buttons">
+                <a href="tel:+94769084292">Call</a>
+                <a href="mailto:21ug0776@sltc.ac.lk">Email</a>
+              </div>
+              <div class="social-link">
+                <a href="https://wa.me/94769084292" class="wa"
+                  ><i class="ri-whatsapp-line"></i
+                ></a>
+                <a href="mailto:21ug0776@sltc.ac.lk" class="email"
+                  ><i class="ri-mail-line"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Content Creation Team Card End -->
+          </div><div class="team-cont">
+          <!-- Treasurer Team Card End -->
+          <!-- 01 -->
+
+          <div class="oc-card">
+            <div class="up">
+              <img src="assets/img/oc/tre1.jpg" alt="Maleesha Bandara " />
+              <h2>Maleesha Bandara</h2>
+
+              <p>Treasurer Team Team Head<br />Codemania v3.0 project</p>
+            </div>
+            <div class="down">
+              <div class="buttons">
+                <a href="tel:+94715818491">Call</a>
+                <a href="mailto:21ug0786@sltc.ac.lk">Email</a>
+              </div>
+              <div class="social-link">
+                <a href="https://wa.me/94715818491" class="wa"
+                  ><i class="ri-whatsapp-line"></i
+                ></a>
+                <a href="mailto:21ug0786@sltc.ac.lk" class="email"
+                  ><i class="ri-mail-line"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 02 -->
+
+          <div class="oc-card">
+            <div class="up">
+              <img src="assets/img/oc/tre2.jpg" alt="Savandi Kumaranayake " />
+              <h2>Savandi Kumaranayake</h2>
+
+              <p>Treasurer Team Deputy Head<br />Codemania v3.0 project</p>
+            </div>
+            <div class="down">
+              <div class="buttons">
+                <a href="tel:+94705515955">Call</a>
+                <a href="mailto:21ug0620@sltc.ac.lk">Email</a>
+              </div>
+              <div class="social-link">
+                <a href="https://wa.me/94705515955" class="wa"
+                  ><i class="ri-whatsapp-line"></i
+                ></a>
+                <a href="mailto:21ug0620@sltc.ac.lk" class="email"
+                  ><i class="ri-mail-line"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Treasurer Team Team Card End -->
+          </div><div class="team-cont">
+          <!-- Logistic Team Team Card End -->
+          <!-- 01 -->
+
+          <div class="oc-card">
+            <div class="up">
+              <img src="assets/img/oc/lo1.jpg" alt="Dumindu Udara" />
+              <h2>Dumindu Udara</h2>
+
+              <p>Logistic Team Head<br />Codemania v3.0 project</p>
+            </div>
+            <div class="down">
+              <div class="buttons">
+                <a href="tel:+94750503932">Call</a>
+                <a href="mailto:21ug0624@sltc.ac.lk">Email</a>
+              </div>
+              <div class="social-link">
+                <a href="https://wa.me/94750503932" class="wa"
+                  ><i class="ri-whatsapp-line"></i
+                ></a>
+                <a href="mailto:21ug0624@sltc.ac.lk" class="email"
+                  ><i class="ri-mail-line"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 02 -->
+
+          <div class="oc-card">
+            <div class="up">
+              <img src="assets/img/oc/lo2.jpg" alt="Janith Aththanayaka " />
+              <h2>Janith Aththanayaka</h2>
+
+              <p>Logistic Team Deputy Head<br />Codemania v3.0 project</p>
+            </div>
+            <div class="down">
+              <div class="buttons">
+                <a href="tel:+94718984922">Call</a>
+                <a href="mailto:21ug0622@sltc.ac.lk">Email</a>
+              </div>
+              <div class="social-link">
+                <a href="https://wa.me/94718984922" class="wa"
+                  ><i class="ri-whatsapp-line"></i
+                ></a>
+                <a href="mailto:21ug0622@sltc.ac.lk" class="email"
+                  ><i class="ri-mail-line"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 03 -->
+
+          <div class="oc-card">
+            <div class="up">
+              <img src="assets/img/oc/lo3.webp" alt="Lahiru Tharuka " />
+              <h2>Lahiru Tharuka</h2>
+
+              <p>Logistic Team Member<br />Codemania v3.0 project</p>
+            </div>
+            <div class="down">
+              <div class="buttons">
+                <a href="tel:+94763239468">Call</a>
+                <a href="mailto:22ug1-0528@sltc.ac.lk">Email</a>
+              </div>
+              <div class="social-link">
+                <a href="https://wa.me/94763239468" class="wa"
+                  ><i class="ri-whatsapp-line"></i
+                ></a>
+                <a href="mailto:22ug1-0528@sltc.ac.lk" class="email"
+                  ><i class="ri-mail-line"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 04 -->
+
+          <div class="oc-card">
+            <div class="up">
+              <img src="assets/img/oc/lo4.jpg" alt="Kavindu Liyanage" />
+              <h2>Kavindu Liyanage</h2>
+
+              <p>Logistic Team Member<br />Codemania v3.0 project</p>
+            </div>
+            <div class="down">
+              <div class="buttons">
+                <a href="tel:+94719426538">Call</a>
+                <a href="mailto:22ug1-0528@sltc.ac.lk">Email</a>
+              </div>
+              <div class="social-link">
+                <a href="https://wa.me/94719426538" class="wa"
+                  ><i class="ri-whatsapp-line"></i
+                ></a>
+                <a href="mailto:22ug1-0528@sltc.ac.lk" class="email"
+                  ><i class="ri-mail-line"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 05 -->
+
+          <div class="oc-card">
+            <div class="up">
+              <img src="assets/img/oc/lo5.jpg" alt="Ravindu Prabhash" />
+              <h2>Ravindu Prabhash</h2>
+
+              <p>Logistic Team Member<br />Codemania v3.0 project</p>
+            </div>
+            <div class="down">
+              <div class="buttons">
+                <a href="tel:+94769848681">Call</a>
+                <a href="mailto:22ug1-0531@sltc.ac.lk">Email</a>
+              </div>
+              <div class="social-link">
+                <a href="https://wa.me/94769848681" class="wa"
+                  ><i class="ri-whatsapp-line"></i
+                ></a>
+                <a href="mailto:22ug1-0531@sltc.ac.lk" class="email"
+                  ><i class="ri-mail-line"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 06-->
+
+          <div class="oc-card">
+            <div class="up">
+              <img src="assets/img/oc/lo6.jpeg" alt="Binara Nethsara" />
+              <h2>Binara Nethsara</h2>
+
+              <p>Logistic Team Member<br />Codemania v3.0 project</p>
+            </div>
+            <div class="down">
+              <div class="buttons">
+                <a href="tel:+94767230457">Call</a>
+                <a href="mailto:22ug1-0477@sltc.ac.lk">Email</a>
+              </div>
+              <div class="social-link">
+                <a href="https://wa.me/94767230457" class="wa"
+                  ><i class="ri-whatsapp-line"></i
+                ></a>
+                <a href="mailto:22ug1-0477@sltc.ac.lk" class="email"
+                  ><i class="ri-mail-line"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 07 -->
+
+          <div class="oc-card">
+            <div class="up">
+              <img src="assets/img/oc/lo7.jpg" alt="Kasmira  Wijayathunga" />
+              <h2>Kasmira Wijayathunga</h2>
+
+              <p>Logistic Team Member<br />Codemania v3.0 project</p>
+            </div>
+            <div class="down">
+              <div class="buttons">
+                <a href="tel:+94770649182">Call</a>
+                <a href="mailto:22ug1-0532@sltc.ac.lk">Email</a>
+              </div>
+              <div class="social-link">
+                <a href="https://wa.me/94770649182" class="wa"
+                  ><i class="ri-whatsapp-line"></i
+                ></a>
+                <a href="mailto:22ug1-0532@sltc.ac.lk" class="email"
+                  ><i class="ri-mail-line"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 08 -->
+
+          <div class="oc-card">
+            <div class="up">
+              <img src="assets/img/oc/lo8.jpg" alt="Vishwa Gamage" />
+              <h2>Vishwa Gamage</h2>
+
+              <p>Logistic Team Member<br />Codemania v3.0 project</p>
+            </div>
+            <div class="down">
+              <div class="buttons">
+                <a href="tel:+94704248458">Call</a>
+                <a href="mailto:22ug1-0582@sltc.ac.lk">Email</a>
+              </div>
+              <div class="social-link">
+                <a href="https://wa.me/94704248458" class="wa"
+                  ><i class="ri-whatsapp-line"></i
+                ></a>
+                <a href="mailto:22ug1-0532@sltc.ac.lk" class="email"
+                  ><i class="ri-mail-line"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <!-- Treasurer Team Team Card End -->
+          </div>
+          <!-- end meet cards -->
         </div>
+      </section>
 
-        <!-- 03 -->
-
-        <div class="oc-card">
-          <div class="up">
-            <img src="assets/img/oc/c3.jpg" alt="Manul Thanura">
-            <h2>Manul Thanura</h2>
-            <!-- <h3>ChairmanTeam Member</h3> -->
-
-            <p>Vise Chairman<br>Codemania v3.0 project</p>
-          </div>
-          <div class="down">
-            <div class="buttons"><a href="tel:+94714545569">Call</a>
-              <a href="mailto:21ug0619@sltc.ac.lk">Email</a>
-            </div>
-            <div class="social-link">
-              <a href="https://wa.me/94714545569" class="wa"><i class="ri-whatsapp-line"></i></a>
-              <a href="mailto:21ug0619@sltc.ac.lk" class="email"><i class="ri-mail-line"></i></a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Chairman card end -->
-
-        <!-- Secretary Team card start -->
-        <!-- 01 -->
-
-        <div class="oc-card">
-          <div class="up">
-            <img src="assets/img/oc/s2.jpg" alt="Ama Perera">
-            <h2>Ama Perera</h2>
-
-
-            <p>Secretary Team Head<br>Codemania v3.0 project</p>
-          </div>
-          <div class="down">
-            <div class="buttons"><a href="tel:+94710198913">Call</a>
-              <a href="mailto:21ug0027@sltc.ac.lk">Email</a>
-            </div>
-            <div class="social-link">
-              <a href="https://wa.me/94710198913" class="wa"><i class="ri-whatsapp-line"></i></a>
-              <a href="mailto:21ug0027@sltc.ac.lk" class="email"><i class="ri-mail-line"></i></a>
-            </div>
-          </div>
-        </div>
-
-
-        <!-- 02 -->
-
-        <div class="oc-card">
-          <div class="up">
-            <img src="assets/img/oc/s1.jpeg" alt="Sithuli Dabarera">
-            <h2>Sithuli Dabarera</h2>
-
-
-            <p>Secretary Team Deputy Head<br>Codemania v3.0 project</p>
-          </div>
-          <div class="down">
-            <div class="buttons"><a href="tel:+94783799085">Call</a>
-              <a href="mailto:21ug0042@sltc.ac.lk">Email</a>
-            </div>
-            <div class="social-link">
-              <a href="https://wa.me/94783799085" class="wa"><i class="ri-whatsapp-line"></i></a>
-              <a href="mailto:21ug0042@sltc.ac.lk" class="email"><i class="ri-mail-line"></i></a>
-            </div>
-          </div>
-        </div>
-
-        <!-- 03 -->
-        <div class="oc-card">
-          <div class="up">
-            <img src="assets/img/oc/s3.jpg" alt="Maleesha Chandrasekara">
-            <h2>Maleesha Chandrasekara</h2>
-
-
-            <p>Secretary Team Member<br>Codemania v3.0 project</p>
-          </div>
-          <div class="down">
-            <div class="buttons"><a href="tel:+94767169833">Call</a>
-              <a href="mailto:22ug1-0490@sltc.ac.lk">Email</a>
-            </div>
-            <div class="social-link">
-              <a href="https://wa.me/94767169833" class="wa"><i class="ri-whatsapp-line"></i></a>
-              <a href="mailto:22ug1-0490@sltc.ac.lk" class="email"><i class="ri-mail-line"></i></a>
-            </div>
-          </div>
-        </div>
-
-
-        <!-- 04 -->
-        <div class="oc-card">
-          <div class="up">
-            <img src="assets/img/oc/s4.jpg" alt="Sewwandi Rathnayaka ">
-            <h2>Sewwandi Rathnayaka</h2>
-
-
-            <p>Secretary Team Member<br>Codemania v3.0 project</p>
-          </div>
-          <div class="down">
-            <div class="buttons"><a href="tel:+94701028412">Call</a>
-              <a href="mailto:22ug1-0805@sltc.ac.lk">Email</a>
-            </div>
-            <div class="social-link">
-              <a href="https://wa.me/94701028412" class="wa"><i class="ri-whatsapp-line"></i></a>
-              <a href="mailto:22ug1-0805@sltc.ac.lk" class="email"><i class="ri-mail-line"></i></a>
-            </div>
-          </div>
-        </div>
-
-
-        <!-- Secretary Team card End -->
-
-        <!-- Technical Team Card start -->
-        <!-- 01 -->
-
-        <div class="oc-card">
-          <div class="up">
-            <img src="assets/img/oc/sahank.jpg" alt="Sahan Kaushalya ">
-            <h2>Sahan Kaushalya</h2>
-
-
-            <p>Technical Team Head<br>Codemania v3.0 project</p>
-          </div>
-          <div class="down">
-            <div class="buttons"><a href="tel:+94787520742">Call</a>
-              <a href="mailto:21ug0625@sltc.ac.lk">Email</a>
-            </div>
-            <div class="social-link">
-              <a href="https://wa.me/94787520742" class="wa"><i class="ri-whatsapp-line"></i></a>
-              <a href="mailto:21ug0625@sltc.ac.lk" class="email"><i class="ri-mail-line"></i></a>
-            </div>
-          </div>
-        </div>
-
-        <!-- 02 -->
-
-        <div class="oc-card">
-          <div class="up">
-            <img src="assets/img/oc/t2.jpg" alt="Chathuranga Bandara ">
-            <h2>Chathuranga Bandara</h2>
-
-
-            <p>Technical Team Member<br>Codemania v3.0 project</p>
-          </div>
-          <div class="down">
-            <div class="buttons"><a href="tel:+94785765593">Call</a>
-              <a href="mailto:21ug1289@sltc.ac.lk">Email</a>
-            </div>
-            <div class="social-link">
-              <a href="https://wa.me/94785765593" class="wa"><i class="ri-whatsapp-line"></i></a>
-              <a href="mailto:21ug1289@sltc.ac.lk" class="email"><i class="ri-mail-line"></i></a>
-            </div>
-          </div>
-        </div>
-
-
-        <!-- 03 -->
-
-        <div class="oc-card">
-          <div class="up">
-            <img src="assets/img/oc/t3.jpg" alt="Lahiru Navod ">
-            <h2>Lahiru Navod</h2>
-
-
-            <p>Technical Team Member<br>Codemania v3.0 project</p>
-          </div>
-          <div class="down">
-            <div class="buttons"><a href="tel:+94772192966">Call</a>
-              <a href="mailto:22ug1-0031@sltc.ac.lk">Email</a>
-            </div>
-            <div class="social-link">
-              <a href="https://wa.me/94772192966" class="wa"><i class="ri-whatsapp-line"></i></a>
-              <a href="mailto:22ug1-0031@sltc.ac.lk" class="email"><i class="ri-mail-line"></i></a>
-            </div>
-          </div>
-        </div>
-
-        <!-- 04 -->
-
-        <div class="oc-card">
-          <div class="up">
-            <img src="assets/img/oc/t4.jpg" alt="G.D.K.B. Gamaethige ">
-            <h2>G.D.K.B. Gamaethige</h2>
-
-
-            <p>Technical Team Member<br>Codemania v3.0 project</p>
-          </div>
-          <div class="down">
-            <div class="buttons"><a href="tel:+94714985833">Call</a>
-              <a href="mailto:22ug1-0498@sltc.ac.lk">Email</a>
-            </div>
-            <div class="social-link">
-              <a href="https://wa.me/94714985833" class="wa"><i class="ri-whatsapp-line"></i></a>
-              <a href="mailto:22ug1-0498@sltc.ac.lk" class="email"><i class="ri-mail-line"></i></a>
-            </div>
-          </div>
-        </div>
-
-        <!-- 05 -->
-
-        <div class="oc-card">
-          <div class="up">
-            <img src="assets/img/oc/t5.jpg" alt="Himansa Wickramasinghe">
-            <h2>Himansa Wickramasinghe</h2>
-
-
-            <p>Technical Team Member<br>Codemania v3.0 project</p>
-          </div>
-          <div class="down">
-            <div class="buttons"><a href="tel:+94701028412">Call</a>
-              <a href="mailto:22ug1-0789@sltc.ac.lk">Email</a>
-            </div>
-            <div class="social-link">
-              <a href="https://wa.me/94701028412" class="wa"><i class="ri-whatsapp-line"></i></a>
-              <a href="mailto:22ug1-0789@sltc.ac.lk" class="email"><i class="ri-mail-line"></i></a>
-            </div>
-          </div>
-        </div>
-
-
-        <!-- 06 -->
-
-        <div class="oc-card">
-          <div class="up">
-            <img src="assets/img/oc/t5.jpg" alt="Chamindu Kavishan">
-            <h2>Chamindu Kavishan</h2>
-
-
-            <p>Technical Team Member<br>Codemania v3.0 project</p>
-          </div>
-          <div class="down">
-            <div class="buttons"><a href="tel:+94762074453">Call</a>
-              <a href="mailto:21ug0733@sltc.ac.lk">Email</a>
-            </div>
-            <div class="social-link">
-              <a href="https://wa.me/94762074453" class="wa"><i class="ri-whatsapp-line"></i></a>
-              <a href="mailto:21ug0733@sltc.ac.lk" class="email"><i class="ri-mail-line"></i></a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Technical Team Card end -->
-
-        <!-- Programming Team Card end -->
-
-        <!-- 01 -->
-
-        <div class="oc-card">
-          <div class="up">
-            <img src="assets/img/oc/p1.jpeg" alt="Anjula Jayasinghe">
-            <h2>Anjula Jayasinghe</h2>
-
-
-            <p>Program Team Team Head<br>Codemania v3.0 project</p>
-          </div>
-          <div class="down">
-            <div class="buttons"><a href="tel:+94703813836">Call</a>
-              <a href="mailto:21ug0845@sltc.ac.lk">Email</a>
-            </div>
-            <div class="social-link">
-              <a href="https://wa.me/94703813836" class="wa"><i class="ri-whatsapp-line"></i></a>
-              <a href="mailto:21ug0845@sltc.ac.lk" class="email"><i class="ri-mail-line"></i></a>
-            </div>
-          </div>
-        </div>
-
-
-        <!-- 02 -->
-
-        <div class="oc-card">
-          <div class="up">
-            <img src="assets/img/oc/p2.jpg" alt="Priyanwada Wickramarathne">
-            <h2>Priyanwada Wickramarathne</h2>
-
-
-            <p>Program Team Team Deputy Head<br>Codemania v3.0 project</p>
-          </div>
-          <div class="down">
-            <div class="buttons"><a href="tel:+94703270241">Call</a>
-              <a href="mailto:21ug0987@sltc.ac.lk">Email</a>
-            </div>
-            <div class="social-link">
-              <a href="https://wa.me/94703270241" class="wa"><i class="ri-whatsapp-line"></i></a>
-              <a href="mailto:21ug0987@sltc.ac.lk" class="email"><i class="ri-mail-line"></i></a>
-            </div>
-          </div>
-        </div>
-
-        <!-- 03 -->
-
-        <div class="oc-card">
-          <div class="up">
-            <img src="assets/img/oc/p3.jpg" alt="Tathila Siriwardhana">
-            <h2>Tathila Siriwardhana</h2>
-
-
-            <p>Program Team Member<br>Codemania v3.0 project</p>
-          </div>
-          <div class="down">
-            <div class="buttons"><a href="tel:+94769800017">Call</a>
-              <a href="mailto:22ug1-0126@sltc.ac.lk">Email</a>
-            </div>
-            <div class="social-link">
-              <a href="https://wa.me/94769800017" class="wa"><i class="ri-whatsapp-line"></i></a>
-              <a href="mailto:22ug1-0126@sltc.ac.lk" class="email"><i class="ri-mail-line"></i></a>
-            </div>
-          </div>
-        </div>
-
-        <!-- 04 -->
-
-        <div class="oc-card">
-          <div class="up">
-            <img src="assets/img/oc/p4.jpg" alt="Vishwa Prasanjana">
-            <h2>Vishwa Prasanjana</h2>
-
-
-            <p>Program Team Member<br>Codemania v3.0 project</p>
-          </div>
-          <div class="down">
-            <div class="buttons"><a href="tel:+94710687472">Call</a>
-              <a href="mailto:22ug1-0521@sltc.ac.lk">Email</a>
-            </div>
-            <div class="social-link">
-              <a href="https://wa.me/94710687472" class="wa"><i class="ri-whatsapp-line"></i></a>
-              <a href="mailto:22ug1-0521@sltc.ac.lk" class="email"><i class="ri-mail-line"></i></a>
-            </div>
-          </div>
-        </div>
-
-        <!-- 05 -->
-
-        <div class="oc-card">
-          <div class="up">
-            <img src="assets/img/oc/p5.jpeg" alt="Shehan Diluka">
-            <h2>Shehan Diluka</h2>
-
-
-            <p>Program Team Member<br>Codemania v3.0 project</p>
-          </div>
-          <div class="down">
-            <div class="buttons"><a href="tel:+94776958064">Call</a>
-              <a href="mailto:22ug1-0262@sltc.ac.lk">Email</a>
-            </div>
-            <div class="social-link">
-              <a href="https://wa.me/94776958064" class="wa"><i class="ri-whatsapp-line"></i></a>
-              <a href="mailto:22ug1-0262@sltc.ac.lk" class="email"><i class="ri-mail-line"></i></a>
-            </div>
-          </div>
-        </div>
-
-
-        <!-- 06 -->
-
-        <div class="oc-card">
-          <div class="up">
-            <img src="assets/img/oc/p6.jpg" alt="Thilina Sirinaga">
-            <h2>Thilina Sirinaga</h2>
-
-
-            <p>Program Team Member<br>Codemania v3.0 project</p>
-          </div>
-          <div class="down">
-            <div class="buttons"><a href="tel:+94710508698">Call</a>
-              <a href="mailto:22ug1-0072@sltc.ac.lk">Email</a>
-            </div>
-            <div class="social-link">
-              <a href="https://wa.me/94710508698" class="wa"><i class="ri-whatsapp-line"></i></a>
-              <a href="mailto:22ug1-0072@sltc.ac.lk" class="email"><i class="ri-mail-line"></i></a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Programming Team Card end -->
-
-        <!-- Design Team Card start -->
-        <!-- 01 -->
-
-        <div class="oc-card">
-          <div class="up">
-            <img src="assets/img/oc/d1.jpg" alt="Ishan Nayanajith">
-            <h2>Ishan Nayanajith</h2>
-
-
-            <p>Team Head<br>Codemania v3.0 project</p>
-          </div>
-          <div class="down">
-            <div class="buttons"><a href="tel:+94712414095">Call</a>
-              <a href="mailto:21ug0951@sltc.ac.lk">Email</a>
-            </div>
-            <div class="social-link">
-              <a href="https://wa.me/94712414095" class="wa"><i class="ri-whatsapp-line"></i></a>
-              <a href="mailto:21ug0951@sltc.ac.lk" class="email"><i class="ri-mail-line"></i></a>
-            </div>
-          </div>
-        </div>
-
-        <!-- 02 -->
-
-        <div class="oc-card">
-          <div class="up">
-            <img src="assets/img/oc/d2.jpg" alt="Sakindu Silva">
-            <h2>Sakindu Silva</h2>
-
-
-            <p>Team Deputy Head<br>Codemania v3.0 project</p>
-          </div>
-          <div class="down">
-            <div class="buttons"><a href="tel:+94774177678">Call</a>
-              <a href="mailto:21ug0973@sltc.ac.lk">Email</a>
-            </div>
-            <div class="social-link">
-              <a href="https://wa.me/94774177678" class="wa"><i class="ri-whatsapp-line"></i></a>
-              <a href="mailto:21ug0973@sltc.ac.lk" class="email"><i class="ri-mail-line"></i></a>
-            </div>
-          </div>
-        </div>
-
-        <!-- 03 -->
-
-        <div class="oc-card">
-          <div class="up">
-            <img src="assets/img/oc/d3.png" alt="Thanura Rukshan">
-            <h2>Thanura Rukshan</h2>
-
-
-            <p>Design Team Member<br>Codemania v3.0 project</p>
-          </div>
-          <div class="down">
-            <div class="buttons"><a href="tel:+94779371866">Call</a>
-              <a href="mailto:22ug1-0529@sltc.ac.lk">Email</a>
-            </div>
-            <div class="social-link">
-              <a href="https://wa.me/94779371866" class="wa"><i class="ri-whatsapp-line"></i></a>
-              <a href="mailto:22ug1-0529@sltc.ac.lk" class="email"><i class="ri-mail-line"></i></a>
-            </div>
-          </div>
-        </div>
-
-        <!-- 04 -->
-
-        <div class="oc-card">
-          <div class="up">
-            <img src="assets/img/oc/d4.jpeg" alt="lakshitha madushan">
-            <h2>lakshitha madushan</h2>
-
-
-            <p>Design Team Member<br>Codemania v3.0 project</p>
-          </div>
-          <div class="down">
-            <div class="buttons"><a href="tel:+94714947564">Call</a>
-              <a href="mailto:22ug1-0824@sltc.ac.lk">Email</a>
-            </div>
-            <div class="social-link">
-              <a href="https://wa.me/94714947564" class="wa"><i class="ri-whatsapp-line"></i></a>
-              <a href="mailto:22ug1-0824@sltc.ac.lk" class="email"><i class="ri-mail-line"></i></a>
-            </div>
-          </div>
-        </div>
-
-        <!-- 05 -->
-
-        <div class="oc-card">
-          <div class="up">
-            <img src="assets/img/oc/d5.jpg" alt="Arjuna Balasooriya">
-            <h2>Arjuna Balasooriya</h2>
-
-
-            <p>Design Team Member<br>Codemania v3.0 project</p>
-          </div>
-          <div class="down">
-            <div class="buttons"><a href="tel:+94718797862">Call</a>
-              <a href="mailto:21ug0947@sltc.ac.lk">Email</a>
-            </div>
-            <div class="social-link">
-              <a href="https://wa.me/94718797862" class="wa"><i class="ri-whatsapp-line"></i></a>
-              <a href="mailto:21ug0947@sltc.ac.lk" class="email"><i class="ri-mail-line"></i></a>
-            </div>
-          </div>
-        </div>
-
-        <!-- 06 -->
-
-        <div class="oc-card">
-          <div class="up">
-            <img src="assets/img/oc/d5.jpg" alt="Januka Navodya ">
-            <h2>Januka Navodya</h2>
-
-
-            <p>Design Team Member<br>Codemania v3.0 project</p>
-          </div>
-          <div class="down">
-            <div class="buttons"><a href="tel:+94070104770">Call</a>
-              <a href="mailto:21ug1056@sltc.ac.lk">Email</a>
-            </div>
-            <div class="social-link">
-              <a href="https://wa.me/94070104770" class="wa"><i class="ri-whatsapp-line"></i></a>
-              <a href="mailto:21ug1056@sltc.ac.lk" class="email"><i class="ri-mail-line"></i></a>
-            </div>
-          </div>
-        </div>
-
-
-        <!-- Design Team Card End -->
-
-
-        <!-- Moderating  Team Card End -->
-
-        <!-- 01 -->
-
-        <div class="oc-card">
-          <div class="up">
-            <img src="assets/img/oc/m1.jpg" alt="Yashodha Disanayake ">
-            <h2>Yashodha Disanayake</h2>
-
-
-            <p>Moderating Team Member<br>Codemania v3.0 project</p>
-          </div>
-          <div class="down">
-            <div class="buttons"><a href="tel:+94701944956">Call</a>
-              <a href="mailto:21ug0319@sltc.ac.lk">Email</a>
-            </div>
-            <div class="social-link">
-              <a href="https://wa.me/94701944956" class="wa"><i class="ri-whatsapp-line"></i></a>
-              <a href="mailto:21ug0319@sltc.ac.lk" class="email"><i class="ri-mail-line"></i></a>
-            </div>
-          </div>
-        </div>
-
-
-        <!-- 02 -->
-
-        <div class="oc-card">
-          <div class="up">
-            <img src="assets/img/oc/m2.jpg" alt="Vimangsa Rajinee">
-            <h2>Vimangsa Rajinee</h2>
-
-
-            <p>Moderating Team Member<br>Codemania v3.0 project</p>
-          </div>
-          <div class="down">
-            <div class="buttons"><a href="tel:+94775437969">Call</a>
-              <a href="mailto:21ug0626@sltc.ac.lk">Email</a>
-            </div>
-            <div class="social-link">
-              <a href="https://wa.me/94775437969" class="wa"><i class="ri-whatsapp-line"></i></a>
-              <a href="mailto:21ug0626@sltc.ac.lk" class="email"><i class="ri-mail-line"></i></a>
-            </div>
-          </div>
-        </div>
-
-
-        <!-- Moderating  Team Card End -->
-
-
-        <!-- Coordination   Team Card strt -->
-        <!-- 01 -->
-
-        <div class="oc-card">
-          <div class="up">
-            <img src="assets/img/oc/coo1.jpg" alt="Chalani Rathnayake">
-            <h2>Chalani Rathnayake</h2>
-
-
-            <p>Coordination Team Head<br>Codemania v3.0 project</p>
-          </div>
-          <div class="down">
-            <div class="buttons"><a href="tel:+94701658909">Call</a>
-              <a href="mailto:21ug0614@sltc.ac.lk">Email</a>
-            </div>
-            <div class="social-link">
-              <a href="https://wa.me/94701658909" class="wa"><i class="ri-whatsapp-line"></i></a>
-              <a href="mailto:21ug0614@sltc.ac.lk" class="email"><i class="ri-mail-line"></i></a>
-            </div>
-          </div>
-        </div>
-
-        <!-- 02 -->
-
-        <div class="oc-card">
-          <div class="up">
-            <img src="assets/img/oc/coo2.jpg" alt="Paboda Marasinghe">
-            <h2>Paboda Marasinghe</h2>
-
-
-            <p>Coordination Team Deputy Head<br>Codemania v3.0 project</p>
-          </div>
-          <div class="down">
-            <div class="buttons"><a href="tel:+94786042142">Call</a>
-              <a href="mailto:21ug0052@sltc.ac.lk">Email</a>
-            </div>
-            <div class="social-link">
-              <a href="https://wa.me/94786042142" class="wa"><i class="ri-whatsapp-line"></i></a>
-              <a href="mailto:21ug0052@sltc.ac.lk" class="email"><i class="ri-mail-line"></i></a>
-            </div>
-          </div>
-        </div>
-
-        <!-- 03 -->
-
-        <div class="oc-card">
-          <div class="up">
-            <img src="assets/img/oc/coo3.jpg" alt="Kavindu Dedunupitiya">
-            <h2>Kavindu Dedunupitiya</h2>
-
-
-            <p>Coordination Team Member<br>Codemania v3.0 project</p>
-          </div>
-          <div class="down">
-            <div class="buttons"><a href="tel:+94740776521">Call</a>
-              <a href="mailto:22ug1-0812@sltc.ac.lk">Email</a>
-            </div>
-            <div class="social-link">
-              <a href="https://wa.me/94740776521" class="wa"><i class="ri-whatsapp-line"></i></a>
-              <a href="mailto:22ug1-0812@sltc.ac.lk" class="email"><i class="ri-mail-line"></i></a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Coordination   Team Card End -->
-
-        <!-- Content Creation Team Card End -->
-
-        <!-- 01 -->
-
-        <div class="oc-card">
-          <div class="up">
-            <img src="assets/img/oc/co1.jpg" alt="Tharushi Liyanage ">
-            <h2>Tharushi Liyanage</h2>
-
-
-            <p>Content Creation Team Head<br>Codemania v3.0 project</p>
-          </div>
-          <div class="down">
-            <div class="buttons"><a href="tel:+94760023949">Call</a>
-              <a href="mailto:21ug0045@sltc.ac.lk">Email</a>
-            </div>
-            <div class="social-link">
-              <a href="https://wa.me/94760023949" class="wa"><i class="ri-whatsapp-line"></i></a>
-              <a href="mailto:21ug0045@sltc.ac.lk" class="email"><i class="ri-mail-line"></i></a>
-            </div>
-          </div>
-        </div>
-
-        <!-- 02 -->
-
-        <div class="oc-card">
-          <div class="up">
-            <img src="assets/img/oc/co2.jpg" alt="Tharuka Nandasiri ">
-            <h2>Tharuka Nandasiri</h2>
-
-
-            <p>Content Creation Team Member<br>Codemania v3.0 project</p>
-          </div>
-          <div class="down">
-            <div class="buttons"><a href="tel:+94767405599">Call</a>
-              <a href="mailto:22ug1-0788@sltc.ac.lk">Email</a>
-            </div>
-            <div class="social-link">
-              <a href="https://wa.me/94767405599" class="wa"><i class="ri-whatsapp-line"></i></a>
-              <a href="mailto:22ug1-0788@sltc.ac.lk" class="email"><i class="ri-mail-line"></i></a>
-            </div>
-          </div>
-        </div>
-
-        <!-- 03 -->
-
-        <div class="oc-card">
-          <div class="up">
-            <img src="assets/img/oc/co3.jpg" alt="Navod Anjalo">
-            <h2>Navod Anjalo</h2>
-
-
-            <p>Content Creation Team Member<br>Codemania v3.0 project</p>
-          </div>
-          <div class="down">
-            <div class="buttons"><a href="tel:+94769084292">Call</a>
-              <a href="mailto:21ug0776@sltc.ac.lk">Email</a>
-            </div>
-            <div class="social-link">
-              <a href="https://wa.me/94769084292" class="wa"><i class="ri-whatsapp-line"></i></a>
-              <a href="mailto:21ug0776@sltc.ac.lk" class="email"><i class="ri-mail-line"></i></a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Content Creation Team Card End -->
-
-        <!-- Treasurer Team Card End -->
-        <!-- 01 -->
-
-        <div class="oc-card">
-          <div class="up">
-            <img src="assets/img/oc/tre1.jpg" alt="Maleesha Bandara ">
-            <h2>Maleesha Bandara</h2>
-
-
-            <p>Treasurer Team Team Head<br>Codemania v3.0 project</p>
-          </div>
-          <div class="down">
-            <div class="buttons"><a href="tel:+94715818491">Call</a>
-              <a href="mailto:21ug0786@sltc.ac.lk">Email</a>
-            </div>
-            <div class="social-link">
-              <a href="https://wa.me/94715818491" class="wa"><i class="ri-whatsapp-line"></i></a>
-              <a href="mailto:21ug0786@sltc.ac.lk" class="email"><i class="ri-mail-line"></i></a>
-            </div>
-          </div>
-        </div>
-
-        <!-- 02 -->
-
-        <div class="oc-card">
-          <div class="up">
-            <img src="assets/img/oc/tre2.jpg" alt="Savandi Kumaranayake ">
-            <h2>Savandi Kumaranayake</h2>
-
-
-            <p>Treasurer Team Deputy Head<br>Codemania v3.0 project</p>
-          </div>
-          <div class="down">
-            <div class="buttons"><a href="tel:+94705515955">Call</a>
-              <a href="mailto:21ug0620@sltc.ac.lk">Email</a>
-            </div>
-            <div class="social-link">
-              <a href="https://wa.me/94705515955" class="wa"><i class="ri-whatsapp-line"></i></a>
-              <a href="mailto:21ug0620@sltc.ac.lk" class="email"><i class="ri-mail-line"></i></a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Treasurer Team Team Card End -->
-
-        <!-- Logistic Team Team Card End -->
-        <!-- 01 -->
-
-        <div class="oc-card">
-          <div class="up">
-            <img src="assets/img/oc/lo1.jpg" alt="Dumindu Udara">
-            <h2>Dumindu Udara</h2>
-
-
-            <p>Logistic Team Head<br>Codemania v3.0 project</p>
-          </div>
-          <div class="down">
-            <div class="buttons"><a href="tel:+94750503932">Call</a>
-              <a href="mailto:21ug0624@sltc.ac.lk">Email</a>
-            </div>
-            <div class="social-link">
-              <a href="https://wa.me/94750503932" class="wa"><i class="ri-whatsapp-line"></i></a>
-              <a href="mailto:21ug0624@sltc.ac.lk" class="email"><i class="ri-mail-line"></i></a>
-            </div>
-          </div>
-        </div>
-
-        <!-- 02 -->
-
-        <div class="oc-card">
-          <div class="up">
-            <img src="assets/img/oc/lo2.jpg" alt="Janith Aththanayaka ">
-            <h2>Janith Aththanayaka</h2>
-
-
-            <p>Logistic Team Deputy Head<br>Codemania v3.0 project</p>
-          </div>
-          <div class="down">
-            <div class="buttons"><a href="tel:+94718984922">Call</a>
-              <a href="mailto:21ug0622@sltc.ac.lk">Email</a>
-            </div>
-            <div class="social-link">
-              <a href="https://wa.me/94718984922" class="wa"><i class="ri-whatsapp-line"></i></a>
-              <a href="mailto:21ug0622@sltc.ac.lk" class="email"><i class="ri-mail-line"></i></a>
-            </div>
-          </div>
-        </div>
-
-
-
-        <!-- 03 -->
-
-        <div class="oc-card">
-          <div class="up">
-            <img src="assets/img/oc/lo3.webp" alt="Lahiru Tharuka ">
-            <h2>Lahiru Tharuka</h2>
-
-
-            <p>Logistic Team Member<br>Codemania v3.0 project</p>
-          </div>
-          <div class="down">
-            <div class="buttons"><a href="tel:+94763239468">Call</a>
-              <a href="mailto:22ug1-0528@sltc.ac.lk">Email</a>
-            </div>
-            <div class="social-link">
-              <a href="https://wa.me/94763239468" class="wa"><i class="ri-whatsapp-line"></i></a>
-              <a href="mailto:22ug1-0528@sltc.ac.lk" class="email"><i class="ri-mail-line"></i></a>
-            </div>
-          </div>
-        </div>
-
-        <!-- 04 -->
-
-        <div class="oc-card">
-          <div class="up">
-            <img src="assets/img/oc/lo4.jpg" alt="Kavindu Liyanage">
-            <h2>Kavindu Liyanage</h2>
-
-
-            <p>Logistic Team Member<br>Codemania v3.0 project</p>
-          </div>
-          <div class="down">
-            <div class="buttons"><a href="tel:+94719426538">Call</a>
-              <a href="mailto:22ug1-0528@sltc.ac.lk">Email</a>
-            </div>
-            <div class="social-link">
-              <a href="https://wa.me/94719426538" class="wa"><i class="ri-whatsapp-line"></i></a>
-              <a href="mailto:22ug1-0528@sltc.ac.lk" class="email"><i class="ri-mail-line"></i></a>
-            </div>
-          </div>
-        </div>
-
-        <!-- 05 -->
-
-        <div class="oc-card">
-          <div class="up">
-            <img src="assets/img/oc/lo5.jpg" alt="Ravindu Prabhash">
-            <h2>Ravindu Prabhash</h2>
-
-
-            <p>Logistic Team Member<br>Codemania v3.0 project</p>
-          </div>
-          <div class="down">
-            <div class="buttons"><a href="tel:+94769848681">Call</a>
-              <a href="mailto:22ug1-0531@sltc.ac.lk">Email</a>
-            </div>
-            <div class="social-link">
-              <a href="https://wa.me/94769848681" class="wa"><i class="ri-whatsapp-line"></i></a>
-              <a href="mailto:22ug1-0531@sltc.ac.lk" class="email"><i class="ri-mail-line"></i></a>
-            </div>
-          </div>
-        </div>
-
-        <!-- 06-->
-
-        <div class="oc-card">
-          <div class="up">
-            <img src="assets/img/oc/lo6.jpeg" alt="Binara Nethsara">
-            <h2>Binara Nethsara</h2>
-
-
-            <p>Logistic Team Member<br>Codemania v3.0 project</p>
-          </div>
-          <div class="down">
-            <div class="buttons"><a href="tel:+94767230457">Call</a>
-              <a href="mailto:22ug1-0477@sltc.ac.lk">Email</a>
-            </div>
-            <div class="social-link">
-              <a href="https://wa.me/94767230457" class="wa"><i class="ri-whatsapp-line"></i></a>
-              <a href="mailto:22ug1-0477@sltc.ac.lk" class="email"><i class="ri-mail-line"></i></a>
-            </div>
-          </div>
-        </div>
-
-        <!-- 07 -->
-
-        <div class="oc-card">
-          <div class="up">
-            <img src="assets/img/oc/lo7.jpg" alt="Kasmira  Wijayathunga">
-            <h2>Kasmira Wijayathunga</h2>
-
-
-            <p>Logistic Team Member<br>Codemania v3.0 project</p>
-          </div>
-          <div class="down">
-            <div class="buttons"><a href="tel:+94770649182">Call</a>
-              <a href="mailto:22ug1-0532@sltc.ac.lk">Email</a>
-            </div>
-            <div class="social-link">
-              <a href="https://wa.me/94770649182" class="wa"><i class="ri-whatsapp-line"></i></a>
-              <a href="mailto:22ug1-0532@sltc.ac.lk" class="email"><i class="ri-mail-line"></i></a>
-            </div>
-          </div>
-        </div>
-
-        <!-- 08 -->
-
-        <div class="oc-card">
-          <div class="up">
-            <img src="assets/img/oc/lo8.jpg" alt="Vishwa Gamage">
-            <h2>Vishwa Gamage</h2>
-
-
-            <p>Logistic Team Member<br>Codemania v3.0 project</p>
-          </div>
-          <div class="down">
-            <div class="buttons"><a href="tel:+94704248458">Call</a>
-              <a href="mailto:22ug1-0582@sltc.ac.lk">Email</a>
-            </div>
-            <div class="social-link">
-              <a href="https://wa.me/94704248458" class="wa"><i class="ri-whatsapp-line"></i></a>
-              <a href="mailto:22ug1-0532@sltc.ac.lk" class="email"><i class="ri-mail-line"></i></a>
-            </div>
-          </div>
-        </div>
-        <!-- Treasurer Team Team Card End -->
-
-        <!-- end meet cards -->
-
-      </div>
-    </section>
-
-    <!-- <section class="cs" style="background-color: #ccb;">
+      <!-- <section class="cs" style="background-color: #ccb;">
                 <div class="container"><img src="assets/img/IEEE_CS_of_SLTC_LOGO-01.png" alt=""></div>
                 
             </section> -->
-    <div class="intro" id="intro">
-      <video src="assets/img/intro.webm" autoplay muted loop plays-inline class="intro-video"></video>
-    </div>
-    <section class="contact" id="contact">
-      <h1 align="center">Contact</h1>
-      <div class="contact-cont">
-        <div class="contact-card">
-          <div class="contact-up">
-            <img data-original="assets/img/oc/saketha-p.jpeg" alt="" class="lazy">
-            <div>
-              <h2>Saketha Pulasthi</h2>
-              <p>Chairman<br>IEEE CS of SLTC</p>
-            </div>
-
-          </div>
-          <div class="contact-down">
-            <a href="tel:+94711651919" class="call"><i class="ri-phone-line"></i></a>
-            <a href="https://wa.me/94711651919?text=Hi%20Saketha,%20my%20name%20is" class="wa"><i
-                class="ri-whatsapp-line"></i></a>
-            <a href="mailto:sakethap@sltc.ac.lk" class="email"><i class="ri-mail-line"></i></a>
-          </div>
-        </div>
-
-        <div class="contact-card">
-          <div class="contact-up">
-            <img data-original="assets/img/oc/charitha-l.jpg" alt="" class="lazy">
-            <div>
-              <h2>Charitha Lakshitha</h2>
-              <p>Chairman<br>Codemania v3.0 project</p>
-            </div>
-
-          </div>
-          <div class="contact-down">
-            <a href="tel:+94778114754" class="call"><i class="ri-phone-line"></i></a>
-            <a href="https://wa.me/94778114754?text=Hi%20Charitha,%20my%20name%20is" class="wa"><i
-                class="ri-whatsapp-line"></i></a>
-            <a href="mailto:21ug1244@sltc.ac.lk" class="email"><i class="ri-mail-line"></i></a>
-          </div>
-        </div>
-        <div class="contact-card">
-          <div class="contact-up">
-            <img data-original="assets/img/oc/anjula-n.jpeg" alt="" class="lazy">
-            <div>
-              <h2>Anjula Niketh</h2>
-              <p>Program Team Head<br>Codemania v3.0 project</p>
-            </div>
-
-          </div>
-          <div class="contact-down">
-            <a href="tel:+94703813836" class="call"><i class="ri-phone-line"></i></a>
-            <a href="https://wa.me/94703813836?text=Hi%20Anjula,%20my%20name%20is" class="wa"><i
-                class="ri-whatsapp-line"></i></a>
-            <a href="mailto:21ug0845@sltc.ac.lk" class="email"><i class="ri-mail-line"></i></a>
-          </div>
-        </div>
-        <!-- chathuranga contact details -->
-
-        <div class="contact-card">
-          <div class="contact-up">
-            <img data-original="assets/img/oc/chathuranga.jpg" alt="" class="lazy">
-            <div>
-              <h2>Chathuranga Bandara</h2>
-              <p>Program Team Deputy Head<br>Codemania v3.0 project</p>
-            </div>
-
-          </div>
-          <div class="contact-down">
-            <a href="tel:+94703813836" class="call"><i class="ri-phone-line"></i></a>
-            <a href="https://wa.me/94703813836?text=Hi%20Anjula,%20my%20name%20is" class="wa"><i
-                class="ri-whatsapp-line"></i></a>
-            <a href="mailto:21ug0845@sltc.ac.lk" class="email"><i class="ri-mail-line"></i></a>
-          </div>
-        </div>
-
-
-
-
-
-        <!-- chathuranga contact details end -->
+      <div class="intro" id="intro">
+        <video
+          src="assets/img/intro.webm"
+          autoplay
+          muted
+          loop
+          plays-inline
+          class="intro-video"
+        ></video>
       </div>
-    </section>
-  </main>
+      <section class="contact" id="contact">
+        <h1 align="center">Contact</h1>
+        <div class="contact-cont">
+          <div class="contact-card">
+            <div class="contact-up">
+              <img
+                data-original="assets/img/oc/saketha-p.jpeg"
+                alt=""
+                class="lazy"
+              />
+              <div>
+                <h2>Saketha Pulasthi</h2>
+                <p>Chairman<br />IEEE CS of SLTC</p>
+              </div>
+            </div>
+            <div class="contact-down">
+              <a href="tel:+94711651919" class="call"
+                ><i class="ri-phone-line"></i
+              ></a>
+              <a
+                href="https://wa.me/94711651919?text=Hi%20Saketha,%20my%20name%20is"
+                class="wa"
+                ><i class="ri-whatsapp-line"></i
+              ></a>
+              <a href="mailto:sakethap@sltc.ac.lk" class="email"
+                ><i class="ri-mail-line"></i
+              ></a>
+            </div>
+          </div>
 
-  <!--==================== FOOTER ====================-->
-  <footer class="footer">
-    <img data-original="assets/img/codegenix/logo-bar.png" alt="" style="margin-top: -20px;" class="lazy">
-    <!-- <div class="footer__container">
+          <div class="contact-card">
+            <div class="contact-up">
+              <img
+                data-original="assets/img/oc/charitha-l.jpg"
+                alt=""
+                class="lazy"
+              />
+              <div>
+                <h2>Charitha Lakshitha</h2>
+                <p>Chairman<br />Codemania v3.0 project</p>
+              </div>
+            </div>
+            <div class="contact-down">
+              <a href="tel:+94778114754" class="call"
+                ><i class="ri-phone-line"></i
+              ></a>
+              <a
+                href="https://wa.me/94778114754?text=Hi%20Charitha,%20my%20name%20is"
+                class="wa"
+                ><i class="ri-whatsapp-line"></i
+              ></a>
+              <a href="mailto:21ug1244@sltc.ac.lk" class="email"
+                ><i class="ri-mail-line"></i
+              ></a>
+            </div>
+          </div>
+          <div class="contact-card">
+            <div class="contact-up">
+              <img
+                data-original="assets/img/oc/anjula-n.jpeg"
+                alt=""
+                class="lazy"
+              />
+              <div>
+                <h2>Anjula Niketh</h2>
+                <p>Program Team Head<br />Codemania v3.0 project</p>
+              </div>
+            </div>
+            <div class="contact-down">
+              <a href="tel:+94703813836" class="call"
+                ><i class="ri-phone-line"></i
+              ></a>
+              <a
+                href="https://wa.me/94703813836?text=Hi%20Anjula,%20my%20name%20is"
+                class="wa"
+                ><i class="ri-whatsapp-line"></i
+              ></a>
+              <a href="mailto:21ug0845@sltc.ac.lk" class="email"
+                ><i class="ri-mail-line"></i
+              ></a>
+            </div>
+          </div>
+          <!-- chathuranga contact details -->
+
+          <div class="contact-card">
+            <div class="contact-up">
+              <img
+                data-original="assets/img/oc/chathuranga.jpg"
+                alt=""
+                class="lazy"
+              />
+              <div>
+                <h2>Chathuranga Bandara</h2>
+                <p>Program Team Deputy Head<br />Codemania v3.0 project</p>
+              </div>
+            </div>
+            <div class="contact-down">
+              <a href="tel:+94703813836" class="call"
+                ><i class="ri-phone-line"></i
+              ></a>
+              <a
+                href="https://wa.me/94703813836?text=Hi%20Anjula,%20my%20name%20is"
+                class="wa"
+                ><i class="ri-whatsapp-line"></i
+              ></a>
+              <a href="mailto:21ug0845@sltc.ac.lk" class="email"
+                ><i class="ri-mail-line"></i
+              ></a>
+            </div>
+          </div>
+
+          <!-- chathuranga contact details end -->
+        </div>
+      </section>
+    </main>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer">
+      <img
+        data-original="assets/img/codegenix/logo-bar.png"
+        alt=""
+        style="margin-top: -20px"
+        class="lazy"
+      />
+      <!-- <div class="footer__container">
                 <div class="foot-div"><a href="#"><img src="assets/img/codegenix/logo.png" alt=""></a></div>
                 <div class="foot-div"><a href="#"><img src="assets/img/IEEE_CS_of_SLTC_LOGO-01.png" alt=""></a></div>
                 <div class="foot-div"><a href="#"><img src="assets/img/IEEE_LOGO.png" alt=""></a></div>
                 <div class="foot-div"><a href="#"><img src="assets/img/SLTC-LOGO_2022.png" alt=""></a></div>
             </div> -->
-    <div class="footer__social">
-      <a href="https://www.facebook.com/" class="footer__social-link">
-        <i class="ri-facebook-fill"></i>
-      </a>
-      <a href="https://www.instagram.com/" class="footer__social-link">
-        <i class="ri-instagram-line"></i>
-      </a>
-      <a href="https://twitter.com/" class="footer__social-link">
-        <i class="ri-twitter-fill"></i>
-      </a>
-      <a href="https://youtube.com/" class="footer__social-link">
-        <i class="ri-youtube-fill"></i>
-      </a>
-    </div>
-    <p class="footer__copy">&#169; CodeGeniX'22 by IEEE Computer Society Student Branch Chapter of SLTC<br>Designed &
-      developed by <a href="https://www.linkedin.com/in/sahankaushalya/" style="color: aliceblue;">Sahan Kaushalya</a>
-    </p>
-  </footer>
-  <!-- Swiper JS -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+      <div class="footer__social">
+        <a href="https://www.facebook.com/" class="footer__social-link">
+          <i class="ri-facebook-fill"></i>
+        </a>
+        <a href="https://www.instagram.com/" class="footer__social-link">
+          <i class="ri-instagram-line"></i>
+        </a>
+        <a href="https://twitter.com/" class="footer__social-link">
+          <i class="ri-twitter-fill"></i>
+        </a>
+        <a href="https://youtube.com/" class="footer__social-link">
+          <i class="ri-youtube-fill"></i>
+        </a>
+      </div>
+      <p class="footer__copy">
+        &#169; CodeGeniX'22 by IEEE Computer Society Student Branch Chapter of
+        SLTC<br />Designed & developed by
+        <a
+          href="https://www.linkedin.com/in/sahankaushalya/"
+          style="color: aliceblue"
+          >Sahan Kaushalya</a
+        >
+      </p>
+    </footer>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
-  <!-- Initialize Swiper -->
-  <script>
-    var swiper = new Swiper(".mySwiper", {
-      spaceBetween: 0,
-      centeredSlides: true,
-      loop: true,
-      loopFillGroupWithBlank: true,
-      autoplay: {
-        delay: 4500,
-        disableOnInteraction: false,
-      },
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-    });
-  </script>
-  <!--=============== SCROLL UP ===============-->
-  <a href="#" class="scrollup" id="scroll-up">
-    <i class="ri-arrow-up-fill scrollup__icon"></i>
-  </a>
-
-  <!--=============== SCROLL REVEAL ===============-->
-  <script src="assets/js/scrollreveal.min.js"></script>
-
-  <!--=============== MAIN JS ===============-->
-  <script src="assets/js/main.js"></script>
-
-  <!-- ========JQuery======= -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
-    integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-  <!-- Lazy Load -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazyload/1.9.1/jquery.lazyload.min.js"
-    integrity="sha512-jNDtFf7qgU0eH/+Z42FG4fw3w7DM/9zbgNPe3wfJlCylVDTT3IgKW5r92Vy9IHa6U50vyMz5gRByIu4YIXFtaQ=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-  <script>
-    $(function () {
-      $('img.lazy').lazyload({
-        effect: "fadeIn"
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 0,
+        centeredSlides: true,
+        loop: true,
+        loopFillGroupWithBlank: true,
+        autoplay: {
+          delay: 4500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
       });
-    });
-  </script>
-</body>
+    </script>
+    <!--=============== SCROLL UP ===============-->
+    <a href="#" class="scrollup" id="scroll-up">
+      <i class="ri-arrow-up-fill scrollup__icon"></i>
+    </a>
 
+    <!--=============== SCROLL REVEAL ===============-->
+    <script src="assets/js/scrollreveal.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+
+    <!-- ========JQuery======= -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+      integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- Lazy Load -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazyload/1.9.1/jquery.lazyload.min.js"
+      integrity="sha512-jNDtFf7qgU0eH/+Z42FG4fw3w7DM/9zbgNPe3wfJlCylVDTT3IgKW5r92Vy9IHa6U50vyMz5gRByIu4YIXFtaQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script>
+      $(function () {
+        $("img.lazy").lazyload({
+          effect: "fadeIn",
+        });
+      });
+    </script>
+  </body>
 </html>
