@@ -1999,3 +1999,8 @@ img{
   justify-content: center;
   row-gap: 2rem;
 }
+
+.team-headline{
+  width:100%;
+  text-align: center;
+}
